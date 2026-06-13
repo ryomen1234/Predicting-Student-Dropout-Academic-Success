@@ -1,0 +1,13 @@
+# data manipilation framework
+pandas
+numpy
+
+# visulization framework
+matplotlib
+seaborn
+
+# framework for mlops task
+dvc
+
+#ml framework
+scikit-learn
