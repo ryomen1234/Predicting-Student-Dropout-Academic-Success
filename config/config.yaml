@@ -1,5 +1,5 @@
 preprocessing:
-  redundant_features:
+  drop_columns:
     - Curricular units 1st sem (enrolled)
     - Educational special needs
     - Curricular units 1st sem (without evaluations)
@@ -14,6 +14,10 @@ preprocessing:
     - Unemployment rate
     - Daytime/evening attendance
   
-  train_size: 0.7
-  test_size: 0.3
+data_split:
+  test_size: 0.2
+  random_state: 42
+
+data_paths:
+  data_dir_path: data
 
