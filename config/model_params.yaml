@@ -1,0 +1,31 @@
+RandomForest:
+  n_estimators:
+    min: 100
+    max: 400
+
+  max_depth:
+    min: 5
+    max: 20
+
+  min_samples_split:
+    min: 2
+    max: 10
+
+  min_samples_leaf:
+    min: 1
+    max: 5
+
+  max_features:
+    - sqrt
+    - log2
+
+  criterion:
+    - gini
+    - entropy
+
+  bootstrap:
+    - true
+
+  class_weight:
+    - balanced
+    - balanced_subsample

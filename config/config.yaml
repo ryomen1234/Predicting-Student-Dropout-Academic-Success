@@ -1,0 +1,19 @@
+preprocessing:
+  redundant_features:
+    - Curricular units 1st sem (enrolled)
+    - Educational special needs
+    - Curricular units 1st sem (without evaluations)
+    - GDP
+    - Curricular units 1st sem (credited)
+    - Nacionality
+    - Curricular units 2nd sem (credited)
+    - International
+    - Displaced
+    - Curricular units 2nd sem (without evaluations)
+    - Curricular units 1st sem (approved)
+    - Unemployment rate
+    - Daytime/evening attendance
+  
+  train_size: 0.7
+  test_size: 0.3
+
