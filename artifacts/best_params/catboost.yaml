@@ -1,0 +1,14 @@
+model_name: CatBoost
+best_trial: 31
+best_params:
+  bootstrap_type: Bayesian
+  iterations: 300
+  learning_rate: 0.043241532289981156
+  depth: 6
+  l2_leaf_reg: 8.454092127190801
+  random_strength: 0.7724351193852126
+  bagging_temperature: 0.4245081819165791
+  border_count: 173
+  grow_policy: Depthwise
+  auto_class_weights: Balanced
+best_value: 0.7278704552225732
