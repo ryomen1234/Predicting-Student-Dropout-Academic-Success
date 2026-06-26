@@ -4,6 +4,7 @@ from pydantic import BaseModel
 
 class PreprocessingConfig(BaseModel):
     drop_columns: list[str]
+    target_columns: list[str]
 
 
 class DataSplitConfig(BaseModel):

@@ -1,6 +1,6 @@
-from utils.load_config import get_config
+from utils.load_config import load_config
 
-config = get_config()
+config = load_config()
 
 print(f"config type: {type(config)}")
 print(config)
