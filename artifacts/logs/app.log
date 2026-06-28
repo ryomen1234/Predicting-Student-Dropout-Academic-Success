@@ -4,3 +4,6 @@
 2026-06-28 14:55:29,786 | src.data.split | INFO | test size: 0.2, random_state: 42
 2026-06-28 14:56:02,187 | src.data.split | INFO | test size: 0.2, random_state: 42
 2026-06-28 15:00:30,630 | src.data.split | INFO | test size: 0.2, random_state: 42
+2026-06-28 22:52:11,637 | src.data.split | INFO | test size: 0.2, random_state: 42
+2026-06-28 22:53:30,606 | src.data.split | INFO | test size: 0.2, random_state: 42
+2026-06-28 22:57:43,494 | src.data.split | INFO | test size: 0.2, random_state: 42
