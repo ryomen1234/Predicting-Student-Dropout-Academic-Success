@@ -1,18 +1,24 @@
 preprocessing:
   drop_columns:
-    - Curricular units 1st sem (enrolled)
+
+    # Redundant / low-importance features
     - Educational special needs
-    - Curricular units 1st sem (without evaluations)
     - GDP
-    - Curricular units 1st sem (credited)
     - Nacionality
-    - Curricular units 2nd sem (credited)
     - International
     - Displaced
-    - Curricular units 2nd sem (without evaluations)
-    - Curricular units 1st sem (approved)
     - Unemployment rate
     - Daytime/evening attendance
+    - Curricular units 1st sem (credited)
+    - Curricular units 1st sem (without evaluations)
+
+    # Second semester features (data leakage)
+    - Curricular units 2nd sem (credited)
+    - Curricular units 2nd sem (enrolled)
+    - Curricular units 2nd sem (evaluations)
+    - Curricular units 2nd sem (approved)
+    - Curricular units 2nd sem (grade)
+    - Curricular units 2nd sem (without evaluations)
   
   target_columns:
     - Dropout
