@@ -18,7 +18,7 @@ def clean_data(X_train: pd.DataFrame, X_test: pd.DataFrame, config) -> Tuple:
     X_train = X_train.drop(columns=feature_to_drop)
     X_test = X_test.drop(columns=feature_to_drop)
 
-    logger.debug(f"columns droped from X_train and X_test")
+    logger.info("columns droped from X_train and X_test")
     logger.debug(f"X_train shape, X_test shape: {X_train.shape, X_test.shape}")
 
     return X_train, X_test

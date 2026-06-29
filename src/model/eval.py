@@ -1,7 +1,12 @@
 import wandb 
 from sklearn.metrics import f1_score, classification_report
 
+from utils.logger import get_logger 
+
+logger=get_logger(__name__)
+
 def eval(model, X_test, y_test,config):
+    logger.info("model evaluation started:")
     
     with wandb.init(
     project="student-drop-enroll-grad-preds",
@@ -26,5 +31,6 @@ def eval(model, X_test, y_test,config):
             "f1_macro": score
            }
         )
+    logger.info("model evaluation done")
 
     return score, report

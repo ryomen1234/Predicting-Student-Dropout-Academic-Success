@@ -37,15 +37,21 @@ class DataValidation:
             raise FileNotFoundError(f"{self.data_path} not found.")
     
     def main(self):
+        logger.info("Data validation started.")
         
         self.check_paths()
 
         df = pd.read_csv(self.data_path, sep=";")
+        logger.info("Data loaded.")
 
         data_shape = df.shape
         missing_vals = df.isnull().sum()
         miss_val = len(missing_vals[missing_vals > 0])
         duplicated_value = df.duplicated().sum()
+
+        logger.debug(f"data shape: {data_shape}")
+        logger.debug(f"missing values: {miss_val}")
+        logger.debug(f"duplicated values : {duplicated_value}")
 
         if set(df["Target"].unique()) != set(self.target):
             logger.error(f"target column {self.target} mismatch")
