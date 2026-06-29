@@ -7,3 +7,51 @@
 2026-06-28 22:52:11,637 | src.data.split | INFO | test size: 0.2, random_state: 42
 2026-06-28 22:53:30,606 | src.data.split | INFO | test size: 0.2, random_state: 42
 2026-06-28 22:57:43,494 | src.data.split | INFO | test size: 0.2, random_state: 42
+2026-06-29 14:05:58,393 | src.data.split | INFO | data split start:
+2026-06-29 14:05:58,421 | src.data.split | INFO | data loaded
+2026-06-29 14:05:58,433 | src.data.split | INFO | Training and test data created
+2026-06-29 14:05:58,435 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-06-29 14:05:58,435 | src.model.train | INFO | Starting CatBoost Training
+2026-06-29 14:05:58,435 | src.model.train | INFO | Training data shape: 3318 sample, 21 feature
+2026-06-29 14:06:00,361 | src.model.train | INFO | Training completed in 1.92 seconds
+2026-06-29 14:06:00,361 | src.model.eval | INFO | Model evaluation started:
+2026-06-29 14:06:16,736 | src.model.eval | INFO | Model evaluation done
+2026-06-29 19:44:48,193 | __main__ | INFO | running main pipeline
+2026-06-29 19:44:48,198 | __main__ | INFO | config file loaded
+2026-06-29 19:44:48,246 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-06-29 19:44:48,252 | src.data.data_validation | INFO | Data validation started.
+2026-06-29 19:44:48,273 | src.data.split | INFO | data split start:
+2026-06-29 19:44:48,284 | src.data.split | INFO | Training and test data created
+2026-06-29 19:44:48,284 | src.data.label_encoder | INFO | Encoding target labels
+2026-06-29 19:44:48,518 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-06-29 19:44:48,519 | src.data.data_cleaning | INFO | Data cleaning started
+2026-06-29 19:44:48,522 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-06-29 19:44:48,523 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-06-29 19:44:48,523 | src.model.train | INFO | Starting CatBoost Training
+2026-06-29 19:44:48,523 | src.model.train | INFO | Training data shape: 3318 sample, 21 feature
+2026-06-29 19:44:51,305 | src.model.train | INFO | Training completed in 2.78 seconds
+2026-06-29 19:44:51,305 | src.model.eval | INFO | Model evaluation started:
+2026-06-29 19:46:13,909 | src.model.eval | INFO | Model evaluation done
+2026-06-29 19:46:13,910 | __main__ | INFO | Pipeline successfully run
+2026-06-29 22:17:51,019 | __main__ | INFO | running main pipeline
+2026-06-29 22:17:51,026 | __main__ | INFO | config file loaded
+2026-06-29 22:17:51,048 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-06-29 22:17:51,052 | src.data.data_validation | INFO | Data validation started.
+2026-06-29 22:17:51,068 | src.data.split | INFO | data split start:
+2026-06-29 22:17:51,076 | src.data.split | INFO | Training and test data created
+2026-06-29 22:17:51,076 | src.data.label_encoder | INFO | Encoding target labels
+2026-06-29 22:17:51,102 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-06-29 22:17:51,102 | src.data.data_cleaning | INFO | Data cleaning started
+2026-06-29 22:17:51,102 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-06-29 22:17:51,108 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-06-29 22:17:51,108 | src.model.train | INFO | Starting CatBoost Training
+2026-06-29 22:17:51,108 | src.model.train | INFO | Training data shape: 3318 sample, 21 feature
+2026-06-29 22:17:53,138 | src.model.train | INFO | Training completed in 2.03 seconds
+2026-06-29 22:17:53,138 | src.model.eval | INFO | Model evaluation started:
+2026-06-29 22:18:18,968 | src.model.eval | INFO | Model evaluation done
+2026-06-29 22:18:18,976 | utils.io | INFO | Saved JSON: artifacts\eval_result.json
+2026-06-29 22:18:18,977 | utils.io | INFO | Saved JSON: artifacts\data_validation_result.json
+2026-06-29 22:18:18,983 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-06-29 22:18:18,983 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-06-29 22:18:18,986 | utils.io | INFO | Saved model: artifacts\eval_result.joblib
+2026-06-29 22:18:18,986 | __main__ | INFO | Pipeline successfully run

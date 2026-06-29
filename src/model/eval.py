@@ -6,7 +6,7 @@ from utils.logger import get_logger
 logger=get_logger(__name__)
 
 def eval(model, X_test, y_test,config):
-    logger.info("model evaluation started:")
+    logger.info("Model evaluation started:")
     
     with wandb.init(
     project="student-drop-enroll-grad-preds",
@@ -31,6 +31,11 @@ def eval(model, X_test, y_test,config):
             "f1_macro": score
            }
         )
-    logger.info("model evaluation done")
+    
+    result = {
+        "model_name": config.model.model_name,
+        "score": score
+    }
+    logger.info("Model evaluation done")
 
-    return score, report
+    return result, report

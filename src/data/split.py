@@ -7,19 +7,16 @@ import numpy as np
 
 logger = get_logger(__name__)
 
-def split_data(config):
+def split_data(config, df):
 
     logger.info("data split start:")
-    DATA_PATH = config.data_paths.data_dir_path / "raw" / "student_academic_data" / "data.csv"
     TEST_SIZE = config.data_split.test_size
     RANDOM_STATE = config.data_split.random_state
+    target = config.preprocessing.target
     logger.debug(f"test size: {TEST_SIZE}, random_state: {RANDOM_STATE}")
-
-    df = pd.read_csv(DATA_PATH, sep=';')
-    logger.info("data loaded")
     
-    X = df.drop(columns=['Target'])
-    y = df['Target']
+    X = df.drop(columns=target)
+    y = df[target]
 
     X_train, X_test, y_train, y_test = train_test_split(
         X,

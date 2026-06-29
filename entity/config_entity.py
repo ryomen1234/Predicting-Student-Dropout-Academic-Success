@@ -6,6 +6,7 @@ from typing import Dict, Any
 class PreprocessingConfig(BaseModel):
     drop_columns: list[str]
     target_columns: list[str]
+    target: str
 
 
 class DataSplitConfig(BaseModel):

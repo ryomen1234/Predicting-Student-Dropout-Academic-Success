@@ -20,6 +20,7 @@ preprocessing:
     - Curricular units 2nd sem (grade)
     - Curricular units 2nd sem (without evaluations)
   
+  target: Target
   target_columns:
     - Dropout
     - Enrolled 

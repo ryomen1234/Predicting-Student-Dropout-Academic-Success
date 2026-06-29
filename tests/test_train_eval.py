@@ -10,7 +10,7 @@ def test_train_eval():
 
     X_train, X_test = data_cleaning.clean_data(X_test=X_test, X_train=X_train, config=config)
 
-    model = train.train(X_train=X_train, y_train=y_train, config=config)
+    model = train.train_model(X_train=X_train, y_train=y_train, config=config)
     score, report = eval.eval(model=model, X_test=X_test, y_test=y_test, config=config)
 
     print(f"score: {score}")

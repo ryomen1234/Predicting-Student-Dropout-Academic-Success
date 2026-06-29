@@ -49,7 +49,7 @@ def save_csv(data: pd.DataFrame, path: Path, index: bool = False) -> None:
 def load_csv(path: Path) -> pd.DataFrame:
     check_file_exists(path)
 
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, sep=';')
 
     logger.info(f"Loaded CSV: {path}")
 

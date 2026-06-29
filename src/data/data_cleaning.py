@@ -7,7 +7,7 @@ import numpy as np
 logger = get_logger(__name__)
 
 def clean_data(X_train: pd.DataFrame, X_test: pd.DataFrame, config) -> Tuple:
-
+    logger.info("Data cleaning started")
     feature_to_drop = config.preprocessing.drop_columns
     logger.debug(f"feature to drop has loaded: {feature_to_drop}")
 
@@ -20,6 +20,8 @@ def clean_data(X_train: pd.DataFrame, X_test: pd.DataFrame, config) -> Tuple:
 
     logger.info("columns droped from X_train and X_test")
     logger.debug(f"X_train shape, X_test shape: {X_train.shape, X_test.shape}")
+
+    logger.info("Data cleaning complete")
 
     return X_train, X_test
 
