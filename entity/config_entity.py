@@ -17,6 +17,11 @@ class DataSplitConfig(BaseModel):
 class DataPathConfig(BaseModel):
     data_dir_path: Path
 
+class ArtifactsPathConfig(BaseModel):
+    model_path: Path 
+    encoder_path: Path 
+    feature_names_path: Path
+
 class ModelConfig(BaseModel):
     model_name: str 
     best_params: Dict[str, Any]
@@ -28,3 +33,4 @@ class Config(BaseModel):
     data_split: DataSplitConfig
     data_paths: DataPathConfig
     model: ModelConfig
+    artifacts: ArtifactsPathConfig

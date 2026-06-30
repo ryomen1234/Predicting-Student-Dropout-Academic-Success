@@ -55,3 +55,31 @@
 2026-06-29 22:18:18,983 | utils.io | INFO | Saved model: artifacts\encoder.joblib
 2026-06-29 22:18:18,986 | utils.io | INFO | Saved model: artifacts\eval_result.joblib
 2026-06-29 22:18:18,986 | __main__ | INFO | Pipeline successfully run
+2026-06-30 14:39:14,978 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-06-30 14:39:17,193 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-06-30 14:42:26,800 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-06-30 14:42:28,407 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-06-30 18:15:52,512 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-06-30 18:15:52,512 | src.data.split | INFO | data split start:
+2026-06-30 18:15:52,527 | src.data.split | INFO | Training and test data created
+2026-06-30 18:15:52,527 | src.data.data_cleaning | INFO | Data cleaning started
+2026-06-30 18:15:52,530 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-06-30 18:15:52,531 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-06-30 18:15:52,532 | utils.io | INFO | Saved model: artifacts\feature_names.joblib
+2026-06-30 18:21:31,180 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-06-30 18:21:48,515 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-06-30 18:43:20,880 | src.inference.loader | INFO | Loading inference artifacts.
+2026-06-30 18:43:21,850 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-06-30 18:43:22,801 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-06-30 18:43:22,801 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-06-30 18:43:22,801 | src.inference.loader | INFO | Inference artifacts loaded successfully.
+2026-06-30 18:43:22,801 | src.inference.predict | INFO | Inference service initialized.
+2026-06-30 18:43:22,801 | src.inference.predict | INFO | Prediction started.
+2026-06-30 18:43:22,801 | src.inference.validate | INFO | Validating inference input.
+2026-06-30 18:43:22,801 | src.inference.validate | INFO | Input validation completed.
+2026-06-30 18:43:22,843 | src.inference.predict | INFO | Prediction completed. Predicted class: Graduate
+2026-06-30 18:43:22,843 | src.inference.response | INFO | Building prediction response.
+2026-06-30 23:52:16,730 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-06-30 23:52:16,730 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-06-30 23:52:26,921 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-06-30 23:52:26,921 | src.inference.loader | INFO | Encoder loaded successfully.

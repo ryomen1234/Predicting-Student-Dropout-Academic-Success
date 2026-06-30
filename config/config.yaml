@@ -33,6 +33,11 @@ data_split:
 data_paths:
   data_dir_path: data
 
+artifacts:
+  model_path: artifacts/models/best_model.joblib
+  encoder_path: artifacts/encoder.joblib
+  feature_names_path: artifacts/feature_names.joblib
+
 model: 
   model_name: CatBoost
   best_params:

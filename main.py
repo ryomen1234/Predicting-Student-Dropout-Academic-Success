@@ -59,7 +59,8 @@ def run():
     encoder_path = save_dir / "encoder.joblib"
     data_validation_result = save_dir / "data_validation_result.json"
     eval_report = save_dir / "eval_result.joblib"
-    eval_result = save_dir / "eval_result.json" 
+    eval_result = save_dir / "eval_result.json"
+    features_name_path = Path("artifacts/feature_names.joblib") 
 
     save_json(data=result, path=eval_result)
     save_json(data=validation_result, path=data_validation_result)
@@ -67,6 +68,8 @@ def run():
     save_model(model=model, path=model_path)
     save_model(model=encoder, path=encoder_path)
     save_model(model=report, path=eval_report)
+
+    save_model(X_train.columns.tolist(), path=features_name_path)
 
 
     logger.info("Pipeline successfully run")
