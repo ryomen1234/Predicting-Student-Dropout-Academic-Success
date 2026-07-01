@@ -83,3 +83,43 @@
 2026-06-30 23:52:16,730 | src.inference.loader | INFO | Feature names loaded successfully.
 2026-06-30 23:52:26,921 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
 2026-06-30 23:52:26,921 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 22:54:26,154 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-01 22:54:26,154 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-01 22:54:36,326 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-01 22:54:36,326 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 23:06:50,702 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-01 23:06:50,702 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 23:08:42,799 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-01 23:08:42,799 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 23:08:58,531 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-01 23:08:58,547 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 23:24:40,893 | src.inference.predict | INFO | Model loading....
+2026-07-01 23:24:45,679 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-01 23:24:45,679 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-01 23:24:45,679 | src.inference.predict | INFO | Loading feature names....
+2026-07-01 23:24:46,602 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-01 23:24:46,602 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 23:24:46,608 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-01 23:24:46,608 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-01 23:24:46,608 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-01 23:24:46,621 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-01 23:29:18,493 | src.inference.predict | INFO | Model loading....
+2026-07-01 23:29:19,245 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-01 23:29:19,245 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-01 23:29:19,245 | src.inference.predict | INFO | Loading feature names....
+2026-07-01 23:29:20,330 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-01 23:29:20,331 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 23:29:20,332 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-01 23:29:20,333 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-01 23:29:20,333 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-01 23:29:20,334 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-01 23:30:06,452 | src.inference.predict | INFO | Model loading....
+2026-07-01 23:30:07,199 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-01 23:30:07,199 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-01 23:30:07,200 | src.inference.predict | INFO | Loading feature names....
+2026-07-01 23:30:08,296 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-01 23:30:08,296 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 23:30:08,297 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-01 23:30:08,297 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-01 23:30:08,297 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-01 23:30:08,298 | src.inference.validate | INFO | Data validation completed successfully.

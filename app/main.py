@@ -12,14 +12,6 @@ app = FastAPI()
 def health():
     return {"message": "application is working fine."}
 
-@app.post("/predict")
-def predict(StudentData: StudentInput):
-    input = StudentData.model_dump()
-    df = pd.DataFrame(input, columns=)
-    print(df)
-
-    # return {"message": input}
-
 
 @app.post("/predict_file")
 async def upload_file(file: UploadFile = File(...)):

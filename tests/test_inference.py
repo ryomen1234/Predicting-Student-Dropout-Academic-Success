@@ -1,11 +1,10 @@
 import pandas as pd
 
-from src.inference.predict import Inference
-
+from src.inference.predict import Modelservice
+from src.inference.validate import ValidateStudentData
 
 def main():
-
-    infer = Inference()
+    infer = Modelservice()
 
     sample = pd.DataFrame(
         [
@@ -34,6 +33,11 @@ def main():
             }
         ]
     )
+
+    vsd = ValidateStudentData()
+
+
+    df = vsd.validate_csv_file(data=sample)
 
     result = infer.predict(sample)
 
