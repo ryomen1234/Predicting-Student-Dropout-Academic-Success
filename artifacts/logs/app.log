@@ -123,3 +123,377 @@
 2026-07-01 23:30:08,297 | src.inference.loader | INFO | Feature names loaded successfully.
 2026-07-01 23:30:08,297 | src.inference.validate | INFO | Validating uploaded data.
 2026-07-01 23:30:08,298 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-01 23:33:02,751 | src.inference.predict | INFO | Model loading....
+2026-07-01 23:33:03,582 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-01 23:33:03,582 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-01 23:33:03,582 | src.inference.predict | INFO | Loading feature names....
+2026-07-01 23:33:04,582 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-01 23:33:04,582 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-01 23:33:04,605 | utils.io | INFO | Loaded CSV: data\processed\x_test.csv
+2026-07-01 23:33:04,605 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-01 23:33:04,605 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-01 23:33:04,605 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-01 23:33:04,605 | src.inference.validate | ERROR | Missing columns: ['Admission grade', 'Age at enrollment', 'Application mode', 'Application order', 'Course', 'Curricular units 1st sem (approved)', 'Curricular units 1st sem (enrolled)', 'Curricular units 1st sem (evaluations)', 'Curricular units 1st sem (grade)', 'Debtor', "Father's occupation", "Father's qualification", 'Gender', 'Inflation rate', 'Marital status', "Mother's occupation", "Mother's qualification", 'Previous qualification', 'Previous qualification (grade)', 'Scholarship holder', 'Tuition fees up to date']
+2026-07-02 18:20:01,603 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:20:36,998 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:20:41,374 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:20:41,374 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:20:41,374 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:20:51,788 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:20:51,788 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:20:51,849 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:20:51,849 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 18:20:51,849 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 18:20:51,849 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 18:20:51,852 | src.inference.validate | ERROR | Unexpected columns: ['Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)', 'Daytime/evening attendance\t', 'Displaced', 'Educational special needs', 'GDP', 'International', 'Nacionality', 'Target', 'Unemployment rate']
+2026-07-02 18:23:52,999 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:23:54,957 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:23:54,957 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:23:54,957 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:23:57,092 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:23:57,092 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:23:57,191 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:23:57,191 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 18:23:57,191 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 18:23:57,191 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 18:23:57,191 | src.inference.validate | ERROR | Unexpected columns: ['Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)', 'Daytime/evening attendance\t', 'Displaced', 'Educational special needs', 'GDP', 'International', 'Nacionality', 'Target', 'Unemployment rate']
+2026-07-02 18:26:55,313 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:26:57,215 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:26:57,215 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:26:57,215 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:26:59,970 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:26:59,972 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:27:00,000 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:27:00,000 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 18:27:00,000 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 18:27:00,000 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 18:27:00,000 | src.inference.validate | ERROR | Unexpected columns: ['Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)', 'Daytime/evening attendance', 'Displaced', 'Educational special needs', 'GDP', 'International', 'Nacionality', 'Target', 'Unemployment rate']
+2026-07-02 18:32:54,645 | __main__ | INFO | running main pipeline
+2026-07-02 18:32:54,645 | __main__ | INFO | config file loaded
+2026-07-02 18:32:54,675 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:32:54,675 | src.data.data_validation | INFO | Data validation started.
+2026-07-02 18:32:54,702 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 18:32:54,702 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 18:32:54,702 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 18:33:29,057 | __main__ | INFO | running main pipeline
+2026-07-02 18:33:29,057 | __main__ | INFO | config file loaded
+2026-07-02 18:33:29,080 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:33:29,080 | src.data.data_validation | INFO | Data validation started.
+2026-07-02 18:33:29,089 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 18:33:29,099 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 18:33:29,099 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 18:33:29,099 | src.data.split | INFO | data split start:
+2026-07-02 18:33:29,115 | src.data.split | INFO | Training and test data created
+2026-07-02 18:33:29,115 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-02 18:33:29,298 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-02 18:33:29,298 | src.model.train | INFO | Starting CatBoost Training
+2026-07-02 18:33:29,299 | src.model.train | INFO | Training data shape: 3318 sample, 21 feature
+2026-07-02 18:33:31,849 | src.model.train | INFO | Training completed in 2.55 seconds
+2026-07-02 18:33:31,849 | src.model.eval | INFO | Model evaluation started:
+2026-07-02 18:34:05,523 | src.model.eval | INFO | Model evaluation done
+2026-07-02 18:34:05,528 | utils.io | INFO | Saved JSON: artifacts\eval_result.json
+2026-07-02 18:34:05,533 | utils.io | INFO | Saved JSON: artifacts\data_validation_result.json
+2026-07-02 18:34:05,550 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-02 18:34:05,550 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-02 18:34:05,558 | utils.io | INFO | Saved model: artifacts\eval_result.joblib
+2026-07-02 18:34:05,564 | utils.io | INFO | Saved model: artifacts\feature_names.joblib
+2026-07-02 18:34:05,564 | __main__ | INFO | Pipeline successfully run
+2026-07-02 18:36:26,597 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:36:28,064 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:36:28,064 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:36:28,064 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:36:29,683 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:36:29,683 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:36:29,714 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:36:29,714 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 18:36:29,714 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 18:36:29,714 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 18:36:29,714 | src.inference.validate | ERROR | Unexpected columns: ['Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)', 'Daytime/evening attendance', 'Displaced', 'Educational special needs', 'GDP', 'International', 'Nacionality', 'Target', 'Unemployment rate']
+2026-07-02 18:43:08,792 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:43:10,376 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:43:10,376 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:43:10,376 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:43:13,109 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:43:13,110 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:43:13,201 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:43:13,201 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 18:43:13,210 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 18:43:13,210 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 18:43:13,216 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 18:43:13,216 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 18:43:13,219 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 18:43:13,219 | src.inference.validate | ERROR | Unexpected columns: ['Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)', 'Daytime/evening attendance', 'Displaced', 'Educational special needs', 'GDP', 'International', 'Nacionality', 'Target', 'Unemployment rate']
+2026-07-02 18:45:09,675 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:45:11,196 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:45:11,196 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:45:11,196 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:45:13,208 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:45:13,208 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:45:13,263 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:45:13,263 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 18:45:13,268 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 18:45:13,270 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 18:45:13,271 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 18:45:13,271 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 18:45:13,271 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 18:45:13,271 | src.inference.validate | ERROR | Unexpected columns: ['Target']
+2026-07-02 18:47:41,384 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:47:43,154 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:47:43,154 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:47:43,154 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:47:45,738 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:47:45,738 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:47:45,783 | utils.io | INFO | Loaded CSV: data\processed\x_test.csv
+2026-07-02 18:47:45,785 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 18:48:22,695 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:48:25,155 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:48:25,155 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:48:25,155 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:48:27,494 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:48:27,494 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:48:27,512 | utils.io | INFO | Loaded CSV: data\processed\x_test.csv
+2026-07-02 18:48:27,514 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 18:48:27,514 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 18:48:27,514 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 18:48:27,514 | src.inference.validate | ERROR | Missing columns: ['Admission grade', 'Age at enrollment', 'Application mode', 'Application order', 'Course', 'Curricular units 1st sem (approved)', 'Curricular units 1st sem (enrolled)', 'Curricular units 1st sem (evaluations)', 'Curricular units 1st sem (grade)', 'Debtor', "Father's occupation", "Father's qualification", 'Gender', 'Inflation rate', 'Marital status', "Mother's occupation", "Mother's qualification", 'Previous qualification', 'Previous qualification (grade)', 'Scholarship holder', 'Tuition fees up to date']
+2026-07-02 18:54:38,115 | __main__ | INFO | running main pipeline
+2026-07-02 18:54:38,115 | __main__ | INFO | config file loaded
+2026-07-02 18:54:38,149 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 18:54:38,149 | src.data.data_validation | INFO | Data validation started.
+2026-07-02 18:54:38,166 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 18:54:38,166 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 18:54:38,166 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 18:54:38,170 | src.data.split | INFO | data split start:
+2026-07-02 18:54:38,170 | src.data.split | INFO | Training and test data created
+2026-07-02 18:54:38,170 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-02 18:54:38,217 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-02 18:54:38,217 | src.model.train | INFO | Starting CatBoost Training
+2026-07-02 18:54:38,217 | src.model.train | INFO | Training data shape: 3318 sample, 21 feature
+2026-07-02 18:54:41,335 | src.model.train | INFO | Training completed in 3.12 seconds
+2026-07-02 18:54:41,335 | src.model.eval | INFO | Model evaluation started:
+2026-07-02 18:54:53,409 | src.model.eval | INFO | Model evaluation done
+2026-07-02 18:54:53,410 | utils.io | INFO | Saved JSON: artifacts\eval_result.json
+2026-07-02 18:54:53,414 | utils.io | INFO | Saved JSON: artifacts\data_validation_result.json
+2026-07-02 18:54:53,472 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-02 18:54:53,494 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-02 18:54:53,501 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-02 18:54:53,501 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-02 18:54:53,503 | utils.io | INFO | Saved model: artifacts\eval_result.joblib
+2026-07-02 18:54:53,505 | utils.io | INFO | Saved model: artifacts\feature_names.joblib
+2026-07-02 18:54:53,505 | __main__ | INFO | Pipeline successfully run
+2026-07-02 18:55:45,244 | src.inference.predict | INFO | Model loading....
+2026-07-02 18:55:47,588 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 18:55:47,588 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 18:55:47,588 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 18:55:50,172 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 18:55:50,172 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 18:55:50,180 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-02 18:55:50,184 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 18:55:50,185 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 18:55:50,185 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 18:55:50,185 | src.inference.validate | ERROR | Missing columns: ['Admission grade', 'Age at enrollment', 'Application mode', 'Application order', 'Course', 'Curricular units 1st sem (approved)', 'Curricular units 1st sem (enrolled)', 'Curricular units 1st sem (evaluations)', 'Curricular units 1st sem (grade)', 'Debtor', "Father's occupation", "Father's qualification", 'Gender', 'Inflation rate', 'Marital status', "Mother's occupation", "Mother's qualification", 'Previous qualification', 'Previous qualification (grade)', 'Scholarship holder', 'Tuition fees up to date']
+2026-07-02 19:04:22,409 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:04:24,170 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:04:24,170 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:04:24,170 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:04:26,193 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:04:26,194 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:04:26,307 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 19:04:26,307 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:04:26,307 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 19:04:26,307 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 19:05:15,070 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:05:16,676 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:05:16,677 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:05:16,677 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:05:18,923 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:05:18,923 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:05:18,973 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 19:05:18,983 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:05:18,985 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 19:05:18,985 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 19:05:57,568 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:05:59,230 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:05:59,230 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:05:59,230 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:06:01,466 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:06:01,466 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:06:01,516 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 19:06:01,518 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:06:01,518 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 19:06:01,518 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 19:06:01,523 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:06:01,523 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:06:01,523 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 19:06:01,523 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-02 19:22:35,131 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:22:35,926 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:22:35,926 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:22:35,926 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:22:36,990 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:22:36,990 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:22:36,990 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:22:36,990 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:22:38,724 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:22:39,475 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:22:39,475 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:22:39,475 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:22:40,740 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:22:40,740 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:22:40,740 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:22:40,740 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:23:21,323 | app.main | INFO | Reading uploaded CSV: data.csv
+2026-07-02 19:23:21,330 | app.main | INFO | Rows: 4424 Columns: 1
+2026-07-02 19:23:21,330 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:23:21,330 | app.main | ERROR | Prediction failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 54, in predict_file
+    df = clean_data(df, config)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\src\data\data_cleaning.py", line 17, in clean_data
+    data = data.drop(columns=feature_to_drop)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\pandas\core\frame.py", line 6300, in drop
+    return super().drop(
+           ^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\pandas\core\generic.py", line 4644, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\pandas\core\generic.py", line 4686, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\pandas\core\indexes\base.py", line 7268, in drop
+    raise KeyError(f"{labels[mask].tolist()} not found in axis")
+KeyError: "['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)'] not found in axis"
+2026-07-02 19:25:09,718 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:25:10,499 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:25:10,499 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:25:10,500 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:25:11,706 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:25:11,706 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:25:11,706 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:25:11,706 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:25:59,865 | app.main | INFO | Reading uploaded CSV: data.csv
+2026-07-02 19:25:59,876 | app.main | INFO | Rows: 4424 Columns: 1
+2026-07-02 19:25:59,876 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:25:59,876 | app.main | ERROR | Prediction failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 46, in predict_file
+    df = clean_data(df, config)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\src\data\data_cleaning.py", line 17, in clean_data
+    data = data.drop(columns=feature_to_drop)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\pandas\core\frame.py", line 6300, in drop
+    return super().drop(
+           ^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\pandas\core\generic.py", line 4644, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\pandas\core\generic.py", line 4686, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\pandas\core\indexes\base.py", line 7268, in drop
+    raise KeyError(f"{labels[mask].tolist()} not found in axis")
+KeyError: "['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)'] not found in axis"
+2026-07-02 19:28:40,106 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:28:40,902 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:28:40,902 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:28:40,902 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:28:42,004 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:28:42,004 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:28:42,038 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-02 19:28:42,038 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:28:42,040 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 19:28:42,041 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 19:28:42,042 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:28:42,043 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:28:42,043 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 19:28:42,046 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-02 19:31:12,757 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:31:13,579 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:31:13,579 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:31:13,579 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:31:14,599 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:31:14,599 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:31:14,599 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:31:14,599 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:31:16,017 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:31:16,814 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:31:16,814 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:31:16,814 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:31:18,270 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:31:18,270 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:31:18,270 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:31:18,270 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:31:35,630 | app.main | INFO | Reading uploaded CSV: data.csv
+2026-07-02 19:31:35,653 | app.main | INFO | Rows: 4424 Columns: 37
+2026-07-02 19:31:35,654 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:31:35,655 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 19:31:35,655 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 19:31:35,657 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 19:31:35,661 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-02 19:31:35,672 | app.main | ERROR | Prediction failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 58, in predict_file
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\starlette\responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "E:\project_archive\new project\venv\Lib\site-packages\starlette\responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\starlette\responses.py", line 195, in render
+    return json.dumps(
+           ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable
+2026-07-02 19:33:07,452 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:33:08,474 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:33:08,474 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:33:08,474 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:33:09,812 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:33:09,813 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:33:09,814 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:33:09,814 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:33:17,058 | app.main | INFO | Reading uploaded CSV: data.csv
+2026-07-02 19:33:17,088 | app.main | INFO | Rows: 4424 Columns: 37
+2026-07-02 19:33:17,088 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:33:17,098 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 19:33:17,098 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 19:33:17,098 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 19:33:17,100 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-02 19:33:17,120 | app.main | ERROR | Prediction failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 56, in predict_file
+    predictions = model_service.predict(df)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\src\inference\predict.py", line 17, in predict
+    return labels.tolist()
+           ^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'to'
+2026-07-02 19:34:03,937 | src.inference.predict | INFO | Model loading....
+2026-07-02 19:34:04,745 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-02 19:34:04,745 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-02 19:34:04,745 | src.inference.predict | INFO | Loading feature names....
+2026-07-02 19:34:05,960 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-02 19:34:05,960 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-02 19:34:05,960 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-02 19:34:05,967 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-02 19:34:21,498 | app.main | INFO | Reading uploaded CSV: data.csv
+2026-07-02 19:34:21,522 | app.main | INFO | Rows: 4424 Columns: 37
+2026-07-02 19:34:21,523 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-02 19:34:21,525 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-02 19:34:21,526 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-02 19:34:21,526 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-02 19:34:21,526 | src.inference.validate | INFO | Data validation completed successfully.

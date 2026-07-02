@@ -11,9 +11,11 @@ class Modelservice:
         logger.info("Loading feature names....")
         self.le = ArtifactLoader.get_encoder()
 
-    def predict(self, X: pd.DataFrame):
-        pred =  self.model.predict(X)
-        return self.le.inverse_transform(pred)
+    def predict(self, X: pd.DataFrame) -> list[str]:
+      pred = self.model.predict(X)
+      labels = self.le.inverse_transform(pred)
+
+      return labels.tolist()
     
 
     

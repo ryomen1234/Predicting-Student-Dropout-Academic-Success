@@ -2,44 +2,28 @@ import pandas as pd
 
 from src.inference.predict import Modelservice
 from src.inference.validate import ValidateStudentData
+from src.data.data_cleaning import clean_data
+from utils.io import load_csv
+from utils.load_config import load_config
+
+
+from pathlib import Path
 
 def main():
     infer = Modelservice()
+    config = load_config()
 
-    sample = pd.DataFrame(
-        [
-            {
-                "Marital status": 1,
-                "Application mode": 17,
-                "Application order": 1,
-                "Course": 171,
-                "Previous qualification": 1,
-                "Previous qualification (grade)": 140.0,
-                "Mother's qualification": 19,
-                "Father's qualification": 19,
-                "Mother's occupation": 5,
-                "Father's occupation": 5,
-                "Admission grade": 142.5,
-                "Debtor": 0,
-                "Tuition fees up to date": 1,
-                "Gender": 1,
-                "Scholarship holder": 1,
-                "Age at enrollment": 18,
-                "Curricular units 1st sem (enrolled)": 6,
-                "Curricular units 1st sem (evaluations)": 6,
-                "Curricular units 1st sem (approved)": 6,
-                "Curricular units 1st sem (grade)": 14.5,
-                "Inflation rate": 1.4,
-            }
-        ]
-    )
+    test_data = load_csv(path=Path("data/raw/student_academic_data/data.csv"))
+    # print(test_data.shape)
+    test_data = clean_data(data=test_data, config=config)
+    # print(test_data.shape)
+    test_data = test_data.drop(columns=["Target"])
+    # print(test_data.shape)
 
     vsd = ValidateStudentData()
+    df = vsd.validate_csv_file(data=test_data)
 
-
-    df = vsd.validate_csv_file(data=sample)
-
-    result = infer.predict(sample)
+    result = infer.predict(df)
 
     print(result)
 
