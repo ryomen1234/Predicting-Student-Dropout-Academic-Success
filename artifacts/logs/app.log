@@ -497,3 +497,19 @@ AttributeError: 'numpy.ndarray' object has no attribute 'to'
 2026-07-02 19:34:21,526 | src.data.data_cleaning | INFO | Data cleaning complete
 2026-07-02 19:34:21,526 | src.inference.validate | INFO | Validating uploaded data.
 2026-07-02 19:34:21,526 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-03 22:53:39,646 | src.inference.predict | INFO | Model loading....
+2026-07-03 22:53:46,280 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-03 22:53:46,280 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-03 22:53:46,280 | src.inference.predict | INFO | Loading feature names....
+2026-07-03 22:53:54,613 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-03 22:53:54,613 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-03 22:53:54,613 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-03 22:53:54,613 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-03 22:53:56,138 | src.inference.predict | INFO | Model loading....
+2026-07-03 22:53:56,836 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-03 22:53:56,836 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-03 22:53:56,836 | src.inference.predict | INFO | Loading feature names....
+2026-07-03 22:53:57,868 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-03 22:53:57,868 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-03 22:53:57,868 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-03 22:53:57,868 | src.inference.loader | INFO | Feature names loaded successfully.
