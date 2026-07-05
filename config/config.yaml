@@ -20,8 +20,8 @@ preprocessing:
     - Curricular units 2nd sem (grade)
     - Curricular units 2nd sem (without evaluations)
   
-  target: Target
-  target_columns:
+  target_col: Target
+  target:
     - Dropout
     - Enrolled 
     - Graduate
@@ -33,10 +33,20 @@ data_split:
 data_paths:
   data_dir_path: data
 
+
 artifacts:
   model_path: artifacts/models/best_model.joblib
   encoder_path: artifacts/encoder.joblib
   feature_names_path: artifacts/feature_names.joblib
+  data_validation_path: artifacts/reports/data_validation_result.json
+  evaluation_path: artifacts/reports/evalution.json
+  classification_report_path: artifacts/reports/classification_report.joblib
+
+processed_path:
+  X_train_path: data/processed/X_train.csv
+  X_test_path: data/processed/X_test.csv
+  y_train_path: data/processed/y_train.npy
+  y_test_path: data/processed/y_test.npy
 
 model: 
   model_name: CatBoost

@@ -12,7 +12,7 @@ def split_data(config, df):
     logger.info("data split start:")
     TEST_SIZE = config.data_split.test_size
     RANDOM_STATE = config.data_split.random_state
-    target = config.preprocessing.target
+    target = config.preprocessing.target_col
     logger.debug(f"test size: {TEST_SIZE}, random_state: {RANDOM_STATE}")
     
     X = df.drop(columns=target)

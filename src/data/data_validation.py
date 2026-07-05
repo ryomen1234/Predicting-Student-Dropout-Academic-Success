@@ -17,22 +17,25 @@ class DataValidation:
 
     def __init__(self, config) -> None:
         self.config = config
-        self.target = config.preprocessing.target_columns
-        self.target_col = config.preprocessing.target
+        self.target_col = config.preprocessing.target_col
+        self.target = config.preprocessing.target
 
     def validate(self, df):
         logger.info("Data validation started.")
 
+
         data_shape = df.shape
+        logger.debug(f"data shape: {data_shape}")
+
         missing_values = {
         column: int(count)
         for column, count in df.isnull().sum().items()
         if count > 0}
-        duplicated_value = int(df.duplicated().sum())
-
-        logger.debug(f"data shape: {data_shape}")
         logger.debug(f"missing values: {missing_values}")
+
+        duplicated_value = int(df.duplicated().sum())
         logger.debug(f"duplicated values : {duplicated_value}")
+
 
         if set(df[self.target_col].unique()) != set(self.target):
             logger.error(f"target column {self.target} mismatch")

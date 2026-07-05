@@ -513,3 +513,473 @@ AttributeError: 'numpy.ndarray' object has no attribute 'to'
 2026-07-03 22:53:57,868 | src.inference.loader | INFO | Encoder loaded successfully.
 2026-07-03 22:53:57,868 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
 2026-07-03 22:53:57,868 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-05 18:43:24,857 | __main__ | INFO | ========== TRAINING PIPELINE STARTED ==========
+2026-07-05 18:43:24,857 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 18:53:52,850 | __main__ | INFO | ========== TRAINING PIPELINE STARTED ==========
+2026-07-05 18:53:52,850 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 18:57:45,762 | __main__ | INFO | ========== TRAINING PIPELINE STARTED ==========
+2026-07-05 18:57:45,762 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 18:57:45,765 | src.pipelines.data_pipeline | INFO | Config loaded
+2026-07-05 18:57:45,802 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 18:57:45,802 | src.pipelines.data_pipeline | INFO | Data loaded.
+2026-07-05 18:57:45,802 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 18:57:45,822 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-05 18:57:45,823 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-05 18:57:45,823 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-05 18:57:45,824 | src.data.split | INFO | data split start:
+2026-07-05 18:57:45,830 | src.data.split | INFO | Training and test data created
+2026-07-05 18:57:45,830 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-05 18:57:45,972 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-05 18:57:46,004 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-05 18:57:46,010 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-05 18:57:46,012 | utils.io | INFO | Saved NumPy array: data\processed\y_train_path
+2026-07-05 18:57:46,014 | utils.io | INFO | Saved NumPy array: data\processed\y_test.csv
+2026-07-05 18:57:46,015 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-05 18:57:46,017 | utils.io | INFO | Saved JSON: artifacts\reports\data_validation_result.json
+2026-07-05 18:57:46,017 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE COMPLETED ==========
+2026-07-05 18:57:46,017 | src.pipelines.model_pipeline | INFO | ========== MODEL PIPELINE STARTED ==========
+2026-07-05 18:57:46,043 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 18:57:46,059 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-05 18:57:46,060 | utils.io | ERROR | File not found: data\processed\y_train_path
+2026-07-05 18:59:51,773 | __main__ | INFO | ========== TRAINING PIPELINE STARTED ==========
+2026-07-05 18:59:51,773 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 18:59:51,787 | src.pipelines.data_pipeline | INFO | Config loaded
+2026-07-05 18:59:51,808 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 18:59:51,808 | src.pipelines.data_pipeline | INFO | Data loaded.
+2026-07-05 18:59:51,808 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 18:59:51,819 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-05 18:59:51,820 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-05 18:59:51,820 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-05 18:59:51,821 | src.data.split | INFO | data split start:
+2026-07-05 18:59:51,827 | src.data.split | INFO | Training and test data created
+2026-07-05 18:59:51,828 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-05 18:59:51,851 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-05 18:59:51,874 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-05 18:59:51,884 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-05 18:59:51,885 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-05 18:59:51,886 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-05 18:59:51,887 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-05 18:59:51,888 | utils.io | INFO | Saved JSON: artifacts\reports\data_validation_result.json
+2026-07-05 18:59:51,888 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE COMPLETED ==========
+2026-07-05 18:59:51,888 | src.pipelines.model_pipeline | INFO | ========== MODEL PIPELINE STARTED ==========
+2026-07-05 18:59:51,915 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 18:59:51,929 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-05 19:02:27,289 | __main__ | INFO | ========== TRAINING PIPELINE STARTED ==========
+2026-07-05 19:02:27,289 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 19:02:27,289 | src.pipelines.data_pipeline | INFO | Config loaded
+2026-07-05 19:02:27,314 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:02:27,314 | src.pipelines.data_pipeline | INFO | Data loaded.
+2026-07-05 19:02:27,314 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:02:27,333 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-05 19:02:27,334 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-05 19:02:27,334 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-05 19:02:27,335 | src.data.split | INFO | data split start:
+2026-07-05 19:02:27,338 | src.data.split | INFO | Training and test data created
+2026-07-05 19:02:27,338 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-05 19:02:27,362 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-05 19:02:27,384 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-05 19:02:27,392 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-05 19:02:27,394 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-05 19:02:27,396 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-05 19:02:27,398 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-05 19:02:27,400 | utils.io | INFO | Saved JSON: artifacts\reports\data_validation_result.json
+2026-07-05 19:02:27,400 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE COMPLETED ==========
+2026-07-05 19:02:27,401 | src.pipelines.model_pipeline | INFO | ========== MODEL PIPELINE STARTED ==========
+2026-07-05 19:02:27,425 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 19:02:27,441 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-05 19:03:20,005 | __main__ | INFO | ========== TRAINING PIPELINE STARTED ==========
+2026-07-05 19:03:20,005 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 19:03:20,010 | src.pipelines.data_pipeline | INFO | Config loaded
+2026-07-05 19:03:20,030 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:03:20,030 | src.pipelines.data_pipeline | INFO | Data loaded.
+2026-07-05 19:03:20,030 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:03:20,039 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-05 19:03:20,040 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-05 19:03:20,040 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-05 19:03:20,041 | src.data.split | INFO | data split start:
+2026-07-05 19:03:20,045 | src.data.split | INFO | Training and test data created
+2026-07-05 19:03:20,045 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-05 19:03:20,064 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-05 19:03:20,088 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-05 19:03:20,092 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-05 19:03:20,097 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-05 19:03:20,098 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-05 19:03:20,100 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-05 19:03:20,101 | utils.io | INFO | Saved JSON: artifacts\reports\data_validation_result.json
+2026-07-05 19:03:20,101 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE COMPLETED ==========
+2026-07-05 19:03:20,101 | src.pipelines.model_pipeline | INFO | ========== MODEL PIPELINE STARTED ==========
+2026-07-05 19:03:20,127 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 19:03:20,129 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-05 19:03:20,151 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-05 19:03:20,155 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-05 19:03:20,155 | src.pipelines.model_pipeline | INFO | Training and Testing data loaded.
+2026-07-05 19:03:20,155 | src.model.train | INFO | Starting CatBoost Training
+2026-07-05 19:03:20,155 | src.model.train | INFO | Training data shape: 3318 sample, 1 feature
+2026-07-05 19:03:20,189 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "_catboost.pyx", line 2606, in _catboost.get_float_feature
+  File "_catboost.pyx", line 1290, in _catboost._FloatOrNan
+  File "_catboost.pyx", line 1039, in _catboost._FloatOrNanFromString
+TypeError: Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2701, in _fit
+    train_params = self._prepare_train_params(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2581, in _prepare_train_params
+    train_pool = _build_train_pool(X, y, cat_features, text_features, embedding_features, pairs, graph,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1540, in _build_train_pool
+    train_pool = Pool(X, y, cat_features=cat_features, text_features=text_features, embedding_features=embedding_features, pairs=pairs, graph=graph, weight=sample_weight, group_id=group_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 863, in __init__
+    self._init(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1518, in _init
+    self._init_pool(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "_catboost.pyx", line 4695, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4753, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4541, in _catboost._PoolBase._init_features_order_layout_pool
+  File "_catboost.pyx", line 3189, in _catboost._set_features_order_data_pd_data_frame
+  File "_catboost.pyx", line 2673, in _catboost.create_num_factor_data
+  File "_catboost.pyx", line 2635, in _catboost._set_features_order_data_frame_generic_num_column
+  File "_catboost.pyx", line 2608, in _catboost.get_float_feature
+_catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature_idx=0]="1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3": Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+2026-07-05 19:03:20,193 | src.model.train | INFO | Training completed in 0.03 seconds
+2026-07-05 19:03:20,193 | src.model.eval | INFO | Model evaluation started:
+2026-07-05 19:07:11,023 | __main__ | INFO | ========== TRAINING PIPELINE STARTED ==========
+2026-07-05 19:07:11,023 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 19:07:11,023 | src.pipelines.data_pipeline | INFO | Config loaded
+2026-07-05 19:07:11,049 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:07:11,049 | src.pipelines.data_pipeline | INFO | Data loaded.
+2026-07-05 19:07:11,049 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:07:11,057 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-05 19:07:11,058 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-05 19:07:11,058 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-05 19:07:11,059 | src.data.split | INFO | data split start:
+2026-07-05 19:07:11,062 | src.data.split | INFO | Training and test data created
+2026-07-05 19:07:11,062 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-05 19:07:11,085 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-05 19:07:11,098 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-05 19:07:11,111 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-05 19:07:11,111 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-05 19:07:11,111 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-05 19:07:11,119 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-05 19:07:11,119 | utils.io | INFO | Saved JSON: artifacts\reports\data_validation_result.json
+2026-07-05 19:07:11,119 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE COMPLETED ==========
+2026-07-05 19:07:11,119 | src.pipelines.model_pipeline | INFO | ========== MODEL PIPELINE STARTED ==========
+2026-07-05 19:07:11,146 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 19:07:11,162 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-05 19:07:11,173 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-05 19:07:11,181 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-05 19:07:11,181 | src.pipelines.model_pipeline | INFO | Training and Testing data loaded.
+2026-07-05 19:07:11,181 | src.model.train | INFO | Starting CatBoost Training
+2026-07-05 19:07:11,181 | src.model.train | INFO | Training data shape: 3318 sample, 1 feature
+2026-07-05 19:07:11,185 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "_catboost.pyx", line 2606, in _catboost.get_float_feature
+  File "_catboost.pyx", line 1290, in _catboost._FloatOrNan
+  File "_catboost.pyx", line 1039, in _catboost._FloatOrNanFromString
+TypeError: Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2701, in _fit
+    train_params = self._prepare_train_params(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2581, in _prepare_train_params
+    train_pool = _build_train_pool(X, y, cat_features, text_features, embedding_features, pairs, graph,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1540, in _build_train_pool
+    train_pool = Pool(X, y, cat_features=cat_features, text_features=text_features, embedding_features=embedding_features, pairs=pairs, graph=graph, weight=sample_weight, group_id=group_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 863, in __init__
+    self._init(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1518, in _init
+    self._init_pool(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "_catboost.pyx", line 4695, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4753, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4541, in _catboost._PoolBase._init_features_order_layout_pool
+  File "_catboost.pyx", line 3189, in _catboost._set_features_order_data_pd_data_frame
+  File "_catboost.pyx", line 2673, in _catboost.create_num_factor_data
+  File "_catboost.pyx", line 2635, in _catboost._set_features_order_data_frame_generic_num_column
+  File "_catboost.pyx", line 2608, in _catboost.get_float_feature
+_catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature_idx=0]="1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3": Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+2026-07-05 19:07:11,190 | src.model.train | INFO | Training completed in 0.01 seconds
+2026-07-05 19:07:11,192 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-05 19:07:11,209 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-05 19:07:11,209 | src.model.eval | INFO | Model evaluation started:
+2026-07-05 19:13:07,186 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 19:13:07,191 | src.pipelines.data_pipeline | INFO | Config loaded
+2026-07-05 19:13:07,207 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:13:07,207 | src.pipelines.data_pipeline | INFO | Data loaded.
+2026-07-05 19:13:07,207 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:13:07,216 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-05 19:13:07,217 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-05 19:13:07,218 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-05 19:13:07,218 | src.data.split | INFO | data split start:
+2026-07-05 19:13:07,230 | src.data.split | INFO | Training and test data created
+2026-07-05 19:13:07,231 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-05 19:13:07,250 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-05 19:13:07,271 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-05 19:13:07,279 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-05 19:13:07,280 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-05 19:13:07,281 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-05 19:13:07,282 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-05 19:13:07,283 | utils.io | INFO | Saved JSON: artifacts\reports\data_validation_result.json
+2026-07-05 19:13:07,283 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE COMPLETED ==========
+2026-07-05 19:15:42,125 | __main__ | INFO | ========== MODEL TRAINING PIPELINE STARTED ==========
+2026-07-05 19:15:42,130 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 19:15:42,130 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-05 19:15:42,139 | src.model.train | INFO | Starting CatBoost Training
+2026-07-05 19:15:42,139 | src.model.train | INFO | Training data shape: 3318 sample, 1 feature
+2026-07-05 19:15:42,147 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "_catboost.pyx", line 2606, in _catboost.get_float_feature
+  File "_catboost.pyx", line 1290, in _catboost._FloatOrNan
+  File "_catboost.pyx", line 1039, in _catboost._FloatOrNanFromString
+TypeError: Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2701, in _fit
+    train_params = self._prepare_train_params(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2581, in _prepare_train_params
+    train_pool = _build_train_pool(X, y, cat_features, text_features, embedding_features, pairs, graph,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1540, in _build_train_pool
+    train_pool = Pool(X, y, cat_features=cat_features, text_features=text_features, embedding_features=embedding_features, pairs=pairs, graph=graph, weight=sample_weight, group_id=group_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 863, in __init__
+    self._init(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1518, in _init
+    self._init_pool(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "_catboost.pyx", line 4695, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4753, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4541, in _catboost._PoolBase._init_features_order_layout_pool
+  File "_catboost.pyx", line 3189, in _catboost._set_features_order_data_pd_data_frame
+  File "_catboost.pyx", line 2673, in _catboost.create_num_factor_data
+  File "_catboost.pyx", line 2635, in _catboost._set_features_order_data_frame_generic_num_column
+  File "_catboost.pyx", line 2608, in _catboost.get_float_feature
+_catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature_idx=0]="1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3": Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+2026-07-05 19:15:42,152 | src.model.train | INFO | Training completed in 0.01 seconds
+2026-07-05 19:15:42,153 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-05 19:15:42,153 | __main__ | INFO | ========== MODEL TRAINING PIPELINE COMPLETED ==========
+2026-07-05 19:19:55,040 | __main__ | INFO | ========== MODEL TRAINING PIPELINE STARTED ==========
+2026-07-05 19:19:55,058 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 19:19:55,060 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-05 19:19:55,060 | src.model.train | INFO | Starting CatBoost Training
+2026-07-05 19:19:55,060 | src.model.train | INFO | Training data shape: 3318 sample, 1 feature
+2026-07-05 19:19:55,061 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "_catboost.pyx", line 2606, in _catboost.get_float_feature
+  File "_catboost.pyx", line 1290, in _catboost._FloatOrNan
+  File "_catboost.pyx", line 1039, in _catboost._FloatOrNanFromString
+TypeError: Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2701, in _fit
+    train_params = self._prepare_train_params(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2581, in _prepare_train_params
+    train_pool = _build_train_pool(X, y, cat_features, text_features, embedding_features, pairs, graph,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1540, in _build_train_pool
+    train_pool = Pool(X, y, cat_features=cat_features, text_features=text_features, embedding_features=embedding_features, pairs=pairs, graph=graph, weight=sample_weight, group_id=group_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 863, in __init__
+    self._init(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1518, in _init
+    self._init_pool(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "_catboost.pyx", line 4695, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4753, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4541, in _catboost._PoolBase._init_features_order_layout_pool
+  File "_catboost.pyx", line 3189, in _catboost._set_features_order_data_pd_data_frame
+  File "_catboost.pyx", line 2673, in _catboost.create_num_factor_data
+  File "_catboost.pyx", line 2635, in _catboost._set_features_order_data_frame_generic_num_column
+  File "_catboost.pyx", line 2608, in _catboost.get_float_feature
+_catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature_idx=0]="1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3": Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+2026-07-05 19:19:55,061 | src.model.train | INFO | Training completed in 0.01 seconds
+2026-07-05 19:19:55,067 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-05 19:19:55,067 | __main__ | INFO | ========== MODEL TRAINING PIPELINE COMPLETED ==========
+2026-07-05 19:22:51,751 | __main__ | INFO | ========== MODEL TRAINING PIPELINE STARTED ==========
+2026-07-05 19:22:51,774 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 19:22:51,775 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-05 19:22:51,775 | src.model.train | INFO | Starting CatBoost Training
+2026-07-05 19:22:51,775 | src.model.train | INFO | Training data shape: 3318 sample, 21 feature
+2026-07-05 19:22:53,639 | src.model.train | INFO | Training completed in 1.86 seconds
+2026-07-05 19:22:53,642 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-05 19:22:53,642 | __main__ | INFO | ========== MODEL TRAINING PIPELINE COMPLETED ==========
+2026-07-05 19:30:48,282 | __main__ | INFO | ========== MODEL PIPELINE STARTED ==========
+2026-07-05 19:30:48,300 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-05 19:31:35,023 | __main__ | INFO | ========== MODEL PIPELINE STARTED ==========
+2026-07-05 19:31:35,028 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-05 19:31:35,028 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-05 19:31:35,039 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-05 19:31:35,039 | src.model.eval | INFO | Model evaluation started:
+2026-07-05 19:31:44,764 | src.model.eval | INFO | Model evaluation done
+2026-07-05 19:31:44,767 | utils.io | INFO | Saved JSON: artifacts\reports\evalution.json
+2026-07-05 19:31:44,773 | utils.io | INFO | Saved model: artifacts\reports\classification_report.joblib
+2026-07-05 19:31:44,774 | __main__ | INFO | ========== MODEL PIPELINE COMPLETED ==========
+2026-07-05 19:32:25,428 | __main__ | INFO | ========== TRAINING PIPELINE STARTED ==========
+2026-07-05 19:32:25,428 | src.pipelines.data_pipeline | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 19:32:25,428 | src.pipelines.data_pipeline | INFO | Config loaded
+2026-07-05 19:32:25,428 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:32:25,428 | src.pipelines.data_pipeline | INFO | Data loaded.
+2026-07-05 19:32:25,428 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:42:15,612 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:43:25,236 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:43:25,236 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:47:24,800 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:47:24,800 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:52:34,913 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:52:34,913 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:53:00,574 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:53:00,574 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:53:26,706 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:53:26,706 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:57:25,602 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:57:25,602 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:58:01,467 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:58:01,467 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 19:58:47,749 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 19:58:47,749 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 20:00:36,813 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 20:00:36,813 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 20:06:10,627 | utils.load_config | DEBUG | config file loaded.
+2026-07-05 20:07:32,341 | utils.load_config | DEBUG | config file loaded.
+2026-07-05 20:09:11,740 | utils.load_config | DEBUG | config file loaded.
+2026-07-05 20:10:29,872 | utils.load_config | DEBUG | config file loaded.
+2026-07-05 20:10:29,892 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 20:10:29,892 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 20:11:13,532 | utils.load_config | DEBUG | config file loaded.
+2026-07-05 20:11:13,550 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 20:11:13,550 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 20:11:13,550 | src.data.data_validation | DEBUG | data shape: (4424, 37)
+2026-07-05 20:11:13,553 | src.data.data_validation | DEBUG | missing values: {}
+2026-07-05 20:11:13,565 | src.data.data_validation | DEBUG | duplicated values : 0
+2026-07-05 20:12:33,715 | __main__ | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 20:12:33,719 | utils.load_config | DEBUG | config file loaded.
+2026-07-05 20:12:33,719 | __main__ | INFO | Config loaded
+2026-07-05 20:12:33,720 | __main__ | DEBUG | config: preprocessing=PreprocessingConfig(drop_columns=['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)'], target_col='Target', target=['Dropout', 'Enrolled', 'Graduate']) data_split=DataSplitConfig(test_size=0.2, random_state=42) data_paths=DataPathConfig(data_dir_path=WindowsPath('data')) model=ModelConfig(model_name='CatBoost', best_params={'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}, random_state=42, n_splits=5) artifacts=ArtifactsPathConfig(model_path=WindowsPath('artifacts/models/best_model.joblib'), encoder_path=WindowsPath('artifacts/encoder.joblib'), feature_names_path=WindowsPath('artifacts/feature_names.joblib'), data_validation_path=WindowsPath('artifacts/reports/data_validation_result.json'), evaluation_path=WindowsPath('artifacts/reports/evalution.json'), classification_report_path=WindowsPath('artifacts/reports/classification_report.joblib')) processed_path=ProcessedDataPathConfig(X_train_path=WindowsPath('data/processed/X_train.csv'), X_test_path=WindowsPath('data/processed/X_test.csv'), y_train_path=WindowsPath('data/processed/y_train.npy'), y_test_path=WindowsPath('data/processed/y_test.npy'))
+2026-07-05 20:12:33,732 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 20:12:33,732 | __main__ | INFO | Data loaded.
+2026-07-05 20:12:33,732 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 20:12:33,732 | src.data.data_validation | DEBUG | data shape: (4424, 37)
+2026-07-05 20:12:33,739 | src.data.data_validation | DEBUG | missing values: {}
+2026-07-05 20:12:33,747 | src.data.data_validation | DEBUG | duplicated values : 0
+2026-07-05 20:12:33,748 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-05 20:12:33,749 | src.data.data_cleaning | DEBUG | feature to drop has loaded: ['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)']
+2026-07-05 20:12:33,750 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-05 20:12:33,750 | src.data.data_cleaning | DEBUG | data shape: (4424, 22)
+2026-07-05 20:12:33,751 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-05 20:12:33,751 | src.data.split | INFO | data split start:
+2026-07-05 20:12:33,751 | src.data.split | DEBUG | test size: 0.2, random_state: 42
+2026-07-05 20:14:01,857 | __main__ | INFO | ========== DATA PIPELINE STARTED ==========
+2026-07-05 20:14:01,857 | utils.load_config | DEBUG | config file loaded.
+2026-07-05 20:14:01,857 | __main__ | INFO | Config loaded
+2026-07-05 20:14:01,857 | __main__ | DEBUG | config: preprocessing=PreprocessingConfig(drop_columns=['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)'], target_col='Target', target=['Dropout', 'Enrolled', 'Graduate']) data_split=DataSplitConfig(test_size=0.2, random_state=42) data_paths=DataPathConfig(data_dir_path=WindowsPath('data')) model=ModelConfig(model_name='CatBoost', best_params={'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}, random_state=42, n_splits=5) artifacts=ArtifactsPathConfig(model_path=WindowsPath('artifacts/models/best_model.joblib'), encoder_path=WindowsPath('artifacts/encoder.joblib'), feature_names_path=WindowsPath('artifacts/feature_names.joblib'), data_validation_path=WindowsPath('artifacts/reports/data_validation_result.json'), evaluation_path=WindowsPath('artifacts/reports/evalution.json'), classification_report_path=WindowsPath('artifacts/reports/classification_report.joblib')) processed_path=ProcessedDataPathConfig(X_train_path=WindowsPath('data/processed/X_train.csv'), X_test_path=WindowsPath('data/processed/X_test.csv'), y_train_path=WindowsPath('data/processed/y_train.npy'), y_test_path=WindowsPath('data/processed/y_test.npy'))
+2026-07-05 20:14:01,889 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-05 20:14:01,889 | __main__ | INFO | Data loaded.
+2026-07-05 20:14:01,889 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 20:14:01,889 | src.data.data_validation | DEBUG | data shape: (4424, 37)
+2026-07-05 20:14:01,892 | src.data.data_validation | DEBUG | missing values: {}
+2026-07-05 20:14:01,898 | src.data.data_validation | DEBUG | duplicated values : 0
+2026-07-05 20:14:01,899 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-05 20:14:01,899 | src.data.data_cleaning | DEBUG | feature to drop has loaded: ['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)']
+2026-07-05 20:14:01,901 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-05 20:14:01,901 | src.data.data_cleaning | DEBUG | data shape: (4424, 22)
+2026-07-05 20:14:01,901 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-05 20:14:01,901 | src.data.split | INFO | data split start:
+2026-07-05 20:14:01,901 | src.data.split | DEBUG | test size: 0.2, random_state: 42
+2026-07-05 20:14:01,905 | src.data.split | INFO | Training and test data created
+2026-07-05 20:14:01,905 | src.data.split | DEBUG | X_train, y_train: ((3318, 21), (3318,)) | X_test, y_test: ((1106, 21), (1106,))
+2026-07-05 20:14:01,905 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-05 20:14:01,926 | src.data.label_encoder | DEBUG | Class mapping: {'Dropout': np.int64(0), 'Enrolled': np.int64(1), 'Graduate': np.int64(2)}
+2026-07-05 20:14:01,926 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-05 20:14:01,948 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-05 20:14:01,957 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-05 20:14:01,958 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-05 20:14:01,958 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-05 20:14:01,960 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-05 20:14:01,960 | utils.io | INFO | Saved JSON: artifacts\reports\data_validation_result.json
+2026-07-05 20:14:01,961 | __main__ | INFO | ========== DATA PIPELINE COMPLETED ==========
+2026-07-05 20:15:01,454 | __main__ | INFO | ========== MODEL TRAINING PIPELINE STARTED ==========
+2026-07-05 20:15:01,458 | utils.load_config | DEBUG | config file loaded.
+2026-07-05 20:15:01,464 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-05 20:15:01,465 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-05 20:15:01,465 | src.model.train | INFO | Starting CatBoost Training
+2026-07-05 20:15:01,465 | src.model.train | INFO | Training data shape: 3318 sample, 1 feature
+2026-07-05 20:15:01,466 | src.model.train | DEBUG | Hyperparameters: {'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}
+2026-07-05 20:15:01,467 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "_catboost.pyx", line 2606, in _catboost.get_float_feature
+  File "_catboost.pyx", line 1290, in _catboost._FloatOrNan
+  File "_catboost.pyx", line 1039, in _catboost._FloatOrNanFromString
+TypeError: Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2701, in _fit
+    train_params = self._prepare_train_params(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2581, in _prepare_train_params
+    train_pool = _build_train_pool(X, y, cat_features, text_features, embedding_features, pairs, graph,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1540, in _build_train_pool
+    train_pool = Pool(X, y, cat_features=cat_features, text_features=text_features, embedding_features=embedding_features, pairs=pairs, graph=graph, weight=sample_weight, group_id=group_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 863, in __init__
+    self._init(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1518, in _init
+    self._init_pool(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "_catboost.pyx", line 4695, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4753, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4541, in _catboost._PoolBase._init_features_order_layout_pool
+  File "_catboost.pyx", line 3189, in _catboost._set_features_order_data_pd_data_frame
+  File "_catboost.pyx", line 2673, in _catboost.create_num_factor_data
+  File "_catboost.pyx", line 2635, in _catboost._set_features_order_data_frame_generic_num_column
+  File "_catboost.pyx", line 2608, in _catboost.get_float_feature
+_catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature_idx=0]="1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3": Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+2026-07-05 20:15:01,471 | src.model.train | INFO | Training completed in 0.00 seconds
+2026-07-05 20:15:01,473 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-05 20:15:01,474 | utils.io | INFO | Saved model: artifacts\feature_names.joblib
+2026-07-05 20:15:01,474 | __main__ | INFO | ========== MODEL TRAINING PIPELINE COMPLETED ==========
+2026-07-05 22:34:49,065 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 22:34:49,065 | src.data.data_validation | DEBUG | data shape: (3, 2)
+2026-07-05 22:34:49,065 | src.data.data_validation | DEBUG | missing values: {}
+2026-07-05 22:34:49,072 | src.data.data_validation | DEBUG | duplicated values : 0
+2026-07-05 22:48:41,172 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 22:52:58,309 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 22:52:58,313 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 22:52:58,327 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 22:52:58,328 | src.data.data_validation | ERROR | target column ['Dropout', 'Graduate', 'Enrolled'] mismatch
+2026-07-05 22:52:58,636 | src.data.data_validation | INFO | Data validation started.
+2026-07-05 22:52:58,637 | src.data.data_validation | ERROR | target column ['Dropout', 'Graduate', 'Enrolled'] mismatch
