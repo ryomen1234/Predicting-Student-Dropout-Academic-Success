@@ -90,3 +90,6 @@ def run():
     )
 
     logger.info("========== DATA PIPELINE COMPLETED ==========")
+
+if __name__ == "__main__":
+    run()

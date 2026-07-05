@@ -50,3 +50,7 @@ def run():
     )
 
     logger.info("========== MODEL PIPELINE COMPLETED ==========")
+
+if __name__ == "__main__":
+    run()
+    
