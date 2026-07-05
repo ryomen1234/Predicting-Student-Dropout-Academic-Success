@@ -8,6 +8,9 @@ logger = get_logger(__name__)
 
 def clean_data(data: pd.DataFrame, config) -> pd.DataFrame:
     logger.info("Data cleaning started")
+
+    data = data.copy()
+    
     feature_to_drop = config.preprocessing.drop_columns
     logger.debug(f"feature to drop has loaded: {feature_to_drop}")
 

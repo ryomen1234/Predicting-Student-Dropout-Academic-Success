@@ -45,10 +45,6 @@ async def predict_file(file: UploadFile = File(...)):
         # Apply same preprocessing used during training
         df = clean_data(df, config)
 
-        # Target column should not be present during inference
-        if "Target" in df.columns:
-            df = df.drop(columns=["Target"])
-
         # Validate features
         df = validator.validate_csv_file(df)
 

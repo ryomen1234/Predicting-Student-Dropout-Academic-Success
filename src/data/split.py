@@ -21,6 +21,7 @@ def split_data(config, df):
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
+        test_size=TEST_SIZE,
         shuffle=True,
         random_state=RANDOM_STATE
     )

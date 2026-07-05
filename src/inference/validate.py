@@ -13,28 +13,7 @@ class ValidateStudentData:
         self.expected_features = ArtifactLoader.get_feature_names()
 
     def validate_csv_file(self, data: pd.DataFrame) -> pd.DataFrame:
-        """
-        Validate input dataframe.
-
-        Parameters
-        ----------
-        data : pd.DataFrame
-            Uploaded student dataset.
-
-        Returns
-        -------
-        pd.DataFrame
-            Validated dataframe with columns ordered correctly.
-
-        Raises
-        ------
-        TypeError
-            If input is not a pandas DataFrame.
-
-        ValueError
-            If required columns are missing or unexpected columns exist.
-        """
-
+        
         logger.info("Validating uploaded data.")
 
         # Validate input type
