@@ -21,6 +21,7 @@ def train_model(X_train, y_train, config) -> CatBoostClassifier:
       model.fit(X_train, y_train)
     except Exception:
        logger.exception("Model training failed")
+       raise
     
     elapsed = perf_counter() - start
     logger.info("Training completed in %.2f seconds", elapsed)

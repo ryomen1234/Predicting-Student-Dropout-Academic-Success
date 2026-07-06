@@ -11,7 +11,7 @@ def get_logger(name: str, file_name: str = "app.log") -> logging.Logger:
     if logger.handlers:
         return logger 
     
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
 
     formatter = logging.Formatter(
         "%(asctime)s | %(name)s | %(levelname)s | %(message)s"

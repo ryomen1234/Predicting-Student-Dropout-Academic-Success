@@ -21,6 +21,16 @@ class ArtifactsPathConfig(BaseModel):
     model_path: Path 
     encoder_path: Path 
     feature_names_path: Path
+    data_validation_path: Path
+    eval_result_path: Path
+    classification_report_path: Path
+
+class ProcessedPathConfig(BaseModel):
+    X_train_path: Path 
+    X_test_path: Path 
+    y_train_path: Path 
+    y_test_path: Path 
+
 
 class ModelConfig(BaseModel):
     model_name: str 
@@ -34,3 +44,4 @@ class Config(BaseModel):
     data_paths: DataPathConfig
     model: ModelConfig
     artifacts: ArtifactsPathConfig
+    processed_data: ProcessedPathConfig

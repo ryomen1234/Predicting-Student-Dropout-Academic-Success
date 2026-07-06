@@ -41,7 +41,7 @@ def ensure_parent_dir(path: Path) -> None:
 def save_csv(data: pd.DataFrame, path: Path, index: bool = False) -> None:
     ensure_parent_dir(path)
 
-    data.to_csv(path, index=index)
+    data.to_csv(path, sep=';', index=index)
 
     logger.info(f"Saved CSV: {path}")
 

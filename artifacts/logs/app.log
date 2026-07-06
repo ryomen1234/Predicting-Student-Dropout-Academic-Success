@@ -513,3 +513,173 @@ AttributeError: 'numpy.ndarray' object has no attribute 'to'
 2026-07-03 22:53:57,868 | src.inference.loader | INFO | Encoder loaded successfully.
 2026-07-03 22:53:57,868 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
 2026-07-03 22:53:57,868 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-06 18:43:03,962 | __main__ | INFO | ======== Running  DataPipeline ==========
+2026-07-06 18:43:03,962 | utils.load_config | DEBUG | config file loaded.
+2026-07-06 18:43:03,962 | __main__ | INFO | config file loaded
+2026-07-06 18:43:03,962 | __main__ | DEBUG | preprocessing=PreprocessingConfig(drop_columns=['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)'], target_columns=['Dropout', 'Enrolled', 'Graduate'], target='Target') data_split=DataSplitConfig(test_size=0.2, random_state=42) data_paths=DataPathConfig(data_dir_path=WindowsPath('data')) model=ModelConfig(model_name='CatBoost', best_params={'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}, random_state=42, n_splits=5) artifacts=ArtifactsPathConfig(model_path=WindowsPath('artifacts/models/best_model.joblib'), encoder_path=WindowsPath('artifacts/encoder.joblib'), feature_names_path=WindowsPath('artifacts/feature_names.joblib'), data_validation_path=WindowsPath('artifacts/reports/validation.json')) processed_data=ProcessedPathConfig(X_train_path=WindowsPath('data/processed/X_train.csv'), X_test_path=WindowsPath('data/processed/X_test.csv'), y_train_path=WindowsPath('data/processed/y_train.npy'), y_test_path=WindowsPath('data/processed/y_test.npy'))
+2026-07-06 18:43:04,001 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-06 18:43:04,001 | src.data.data_validation | INFO | Data validation started.
+2026-07-06 18:43:04,010 | src.data.data_validation | DEBUG | data shape: (4424, 37)
+2026-07-06 18:43:04,010 | src.data.data_validation | DEBUG | missing values: {}
+2026-07-06 18:43:04,010 | src.data.data_validation | DEBUG | duplicated values : 0
+2026-07-06 18:43:04,010 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-06 18:43:04,010 | src.data.data_cleaning | DEBUG | feature to drop has loaded: ['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)']
+2026-07-06 18:43:04,015 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-06 18:43:04,015 | src.data.data_cleaning | DEBUG | data shape: (4424, 22)
+2026-07-06 18:43:04,015 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-06 18:43:04,015 | src.data.split | INFO | data split start:
+2026-07-06 18:43:04,015 | src.data.split | DEBUG | test size: 0.2, random_state: 42
+2026-07-06 18:43:04,021 | src.data.split | INFO | Training and test data created
+2026-07-06 18:43:04,021 | src.data.split | DEBUG | X_train, y_train: ((3318, 21), (3318,)) | X_test, y_test: ((1106, 21), (1106,))
+2026-07-06 18:43:04,022 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-06 18:43:04,172 | src.data.label_encoder | DEBUG | Class mapping: {'Dropout': np.int64(0), 'Enrolled': np.int64(1), 'Graduate': np.int64(2)}
+2026-07-06 18:43:04,172 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-06 18:43:04,174 | utils.io | INFO | Saved JSON: artifacts\reports\validation.json
+2026-07-06 18:43:04,208 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-06 18:43:04,216 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-06 18:43:04,217 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-06 18:43:04,218 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-06 18:43:04,219 | __main__ | INFO | ======= DataPipeline run successfully =========
+2026-07-06 18:50:36,267 | __main__ | INFO | ========== Training Pipeline Started ==========
+2026-07-06 18:50:36,267 | utils.load_config | DEBUG | config file loaded.
+2026-07-06 18:50:36,267 | __main__ | INFO | config file loaded
+2026-07-06 18:50:36,267 | __main__ | DEBUG | preprocessing=PreprocessingConfig(drop_columns=['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)'], target_columns=['Dropout', 'Enrolled', 'Graduate'], target='Target') data_split=DataSplitConfig(test_size=0.2, random_state=42) data_paths=DataPathConfig(data_dir_path=WindowsPath('data')) model=ModelConfig(model_name='CatBoost', best_params={'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}, random_state=42, n_splits=5) artifacts=ArtifactsPathConfig(model_path=WindowsPath('artifacts/models/best_model.joblib'), encoder_path=WindowsPath('artifacts/encoder.joblib'), feature_names_path=WindowsPath('artifacts/feature_names.joblib'), data_validation_path=WindowsPath('artifacts/reports/validation.json')) processed_data=ProcessedPathConfig(X_train_path=WindowsPath('data/processed/X_train.csv'), X_test_path=WindowsPath('data/processed/X_test.csv'), y_train_path=WindowsPath('data/processed/y_train.npy'), y_test_path=WindowsPath('data/processed/y_test.npy'))
+2026-07-06 18:50:36,278 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-06 18:50:36,279 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-06 18:50:36,279 | src.model.train | INFO | Starting CatBoost Training
+2026-07-06 18:50:36,279 | src.model.train | INFO | Training data shape: 3318 sample, 1 feature
+2026-07-06 18:50:36,279 | src.model.train | DEBUG | Hyperparameters: {'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}
+2026-07-06 18:50:36,293 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "_catboost.pyx", line 2606, in _catboost.get_float_feature
+  File "_catboost.pyx", line 1290, in _catboost._FloatOrNan
+  File "_catboost.pyx", line 1039, in _catboost._FloatOrNanFromString
+TypeError: Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2701, in _fit
+    train_params = self._prepare_train_params(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2581, in _prepare_train_params
+    train_pool = _build_train_pool(X, y, cat_features, text_features, embedding_features, pairs, graph,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1540, in _build_train_pool
+    train_pool = Pool(X, y, cat_features=cat_features, text_features=text_features, embedding_features=embedding_features, pairs=pairs, graph=graph, weight=sample_weight, group_id=group_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 863, in __init__
+    self._init(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1518, in _init
+    self._init_pool(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "_catboost.pyx", line 4695, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4753, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4541, in _catboost._PoolBase._init_features_order_layout_pool
+  File "_catboost.pyx", line 3189, in _catboost._set_features_order_data_pd_data_frame
+  File "_catboost.pyx", line 2673, in _catboost.create_num_factor_data
+  File "_catboost.pyx", line 2635, in _catboost._set_features_order_data_frame_generic_num_column
+  File "_catboost.pyx", line 2608, in _catboost.get_float_feature
+_catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature_idx=0]="1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3": Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+2026-07-06 18:50:36,295 | src.model.train | INFO | Training completed in 0.02 seconds
+2026-07-06 18:50:36,295 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-06 18:50:36,295 | utils.io | INFO | Saved model: artifacts\feature_names.joblib
+2026-07-06 18:50:36,295 | __main__ | INFO | Training Pipeline Complete.
+2026-07-06 18:52:00,699 | __main__ | INFO | ========== Training Pipeline Started ==========
+2026-07-06 18:52:00,704 | utils.load_config | DEBUG | config file loaded.
+2026-07-06 18:52:00,704 | __main__ | INFO | config file loaded
+2026-07-06 18:52:00,704 | __main__ | DEBUG | preprocessing=PreprocessingConfig(drop_columns=['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)'], target_columns=['Dropout', 'Enrolled', 'Graduate'], target='Target') data_split=DataSplitConfig(test_size=0.2, random_state=42) data_paths=DataPathConfig(data_dir_path=WindowsPath('data')) model=ModelConfig(model_name='CatBoost', best_params={'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}, random_state=42, n_splits=5) artifacts=ArtifactsPathConfig(model_path=WindowsPath('artifacts/models/best_model.joblib'), encoder_path=WindowsPath('artifacts/encoder.joblib'), feature_names_path=WindowsPath('artifacts/feature_names.joblib'), data_validation_path=WindowsPath('artifacts/reports/validation.json')) processed_data=ProcessedPathConfig(X_train_path=WindowsPath('data/processed/X_train.csv'), X_test_path=WindowsPath('data/processed/X_test.csv'), y_train_path=WindowsPath('data/processed/y_train.npy'), y_test_path=WindowsPath('data/processed/y_test.npy'))
+2026-07-06 18:52:00,711 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-06 18:52:00,712 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-06 18:52:00,712 | src.model.train | INFO | Starting CatBoost Training
+2026-07-06 18:52:00,713 | src.model.train | INFO | Training data shape: 3318 sample, 1 feature
+2026-07-06 18:52:00,713 | src.model.train | DEBUG | Hyperparameters: {'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}
+2026-07-06 18:52:00,714 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "_catboost.pyx", line 2606, in _catboost.get_float_feature
+  File "_catboost.pyx", line 1290, in _catboost._FloatOrNan
+  File "_catboost.pyx", line 1039, in _catboost._FloatOrNanFromString
+TypeError: Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2701, in _fit
+    train_params = self._prepare_train_params(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 2581, in _prepare_train_params
+    train_pool = _build_train_pool(X, y, cat_features, text_features, embedding_features, pairs, graph,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1540, in _build_train_pool
+    train_pool = Pool(X, y, cat_features=cat_features, text_features=text_features, embedding_features=embedding_features, pairs=pairs, graph=graph, weight=sample_weight, group_id=group_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 863, in __init__
+    self._init(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "E:\project_archive\new project\venv\Lib\site-packages\catboost\core.py", line 1518, in _init
+    self._init_pool(data, label, cat_features, text_features, embedding_features, embedding_features_data, pairs, graph, weight,
+  File "_catboost.pyx", line 4695, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4753, in _catboost._PoolBase._init_pool
+  File "_catboost.pyx", line 4541, in _catboost._PoolBase._init_features_order_layout_pool
+  File "_catboost.pyx", line 3189, in _catboost._set_features_order_data_pd_data_frame
+  File "_catboost.pyx", line 2673, in _catboost.create_num_factor_data
+  File "_catboost.pyx", line 2635, in _catboost._set_features_order_data_frame_generic_num_column
+  File "_catboost.pyx", line 2608, in _catboost.get_float_feature
+_catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature_idx=0]="1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3": Cannot convert '1,17,1,9238,1,120.0,19,19,4,5,114.8,1,0,0,0,19,6,10,5,11.714285714285714,0.3' to float
+2026-07-06 18:55:35,293 | __main__ | INFO | ======== Running  DataPipeline ==========
+2026-07-06 18:55:35,293 | utils.load_config | DEBUG | config file loaded.
+2026-07-06 18:55:35,293 | __main__ | INFO | config file loaded
+2026-07-06 18:55:35,314 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-06 18:55:35,314 | src.data.data_validation | INFO | Data validation started.
+2026-07-06 18:55:35,324 | src.data.data_validation | DEBUG | data shape: (4424, 37)
+2026-07-06 18:55:35,324 | src.data.data_validation | DEBUG | missing values: {}
+2026-07-06 18:55:35,324 | src.data.data_validation | DEBUG | duplicated values : 0
+2026-07-06 18:55:35,325 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-06 18:55:35,325 | src.data.data_cleaning | DEBUG | feature to drop has loaded: ['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)']
+2026-07-06 18:55:35,326 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-06 18:55:35,326 | src.data.data_cleaning | DEBUG | data shape: (4424, 22)
+2026-07-06 18:55:35,326 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-06 18:55:35,326 | src.data.split | INFO | data split start:
+2026-07-06 18:55:35,326 | src.data.split | DEBUG | test size: 0.2, random_state: 42
+2026-07-06 18:55:35,331 | src.data.split | INFO | Training and test data created
+2026-07-06 18:55:35,332 | src.data.split | DEBUG | X_train, y_train: ((3318, 21), (3318,)) | X_test, y_test: ((1106, 21), (1106,))
+2026-07-06 18:55:35,332 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-06 18:55:35,355 | src.data.label_encoder | DEBUG | Class mapping: {'Dropout': np.int64(0), 'Enrolled': np.int64(1), 'Graduate': np.int64(2)}
+2026-07-06 18:55:35,355 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-06 18:55:35,355 | utils.io | INFO | Saved JSON: artifacts\reports\validation.json
+2026-07-06 18:55:35,366 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-06 18:55:35,391 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-06 18:55:35,403 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-06 18:55:35,405 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-06 18:55:35,406 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-06 18:55:35,406 | __main__ | INFO | ======= DataPipeline run successfully =========
+2026-07-06 18:56:35,260 | __main__ | INFO | ========== Training Pipeline Started ==========
+2026-07-06 18:56:35,264 | utils.load_config | DEBUG | config file loaded.
+2026-07-06 18:56:35,264 | __main__ | INFO | config file loaded
+2026-07-06 18:56:35,275 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-06 18:56:35,275 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-06 18:56:35,276 | src.model.train | INFO | Starting CatBoost Training
+2026-07-06 18:56:35,276 | src.model.train | INFO | Training data shape: 3318 sample, 21 feature
+2026-07-06 18:56:35,276 | src.model.train | DEBUG | Hyperparameters: {'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}
+2026-07-06 18:56:37,312 | src.model.train | INFO | Training completed in 2.04 seconds
+2026-07-06 18:56:37,312 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-06 18:56:37,312 | utils.io | INFO | Saved model: artifacts\feature_names.joblib
+2026-07-06 18:56:37,312 | __main__ | INFO | Training Pipeline Complete.
+2026-07-06 19:07:16,676 | __main__ | INFO | =========== Evaluation Started =============
+2026-07-06 19:07:16,679 | utils.load_config | DEBUG | config file loaded.
+2026-07-06 19:07:16,681 | __main__ | INFO | config file loaded
+2026-07-06 19:07:16,681 | __main__ | DEBUG | preprocessing=PreprocessingConfig(drop_columns=['Educational special needs', 'GDP', 'Nacionality', 'International', 'Displaced', 'Unemployment rate', 'Daytime/evening attendance', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)'], target_columns=['Dropout', 'Enrolled', 'Graduate'], target='Target') data_split=DataSplitConfig(test_size=0.2, random_state=42) data_paths=DataPathConfig(data_dir_path=WindowsPath('data')) model=ModelConfig(model_name='CatBoost', best_params={'bootstrap_type': 'Bayesian', 'iterations': 300, 'learning_rate': 0.043241532289981156, 'depth': 6, 'l2_leaf_reg': 8.454092127190801, 'random_strength': 0.7724351193852126, 'bagging_temperature': 0.4245081819165791, 'border_count': 173, 'grow_policy': 'Depthwise', 'auto_class_weights': 'Balanced', 'verbose': 0}, random_state=42, n_splits=5) artifacts=ArtifactsPathConfig(model_path=WindowsPath('artifacts/models/best_model.joblib'), encoder_path=WindowsPath('artifacts/encoder.joblib'), feature_names_path=WindowsPath('artifacts/feature_names.joblib'), data_validation_path=WindowsPath('artifacts/reports/validation.json'), eval_result_path=WindowsPath('artifacts/eval_result.json'), classification_report_path=WindowsPath('artifacts/classification_report.json')) processed_data=ProcessedPathConfig(X_train_path=WindowsPath('data/processed/X_train.csv'), X_test_path=WindowsPath('data/processed/X_test.csv'), y_train_path=WindowsPath('data/processed/y_train.npy'), y_test_path=WindowsPath('data/processed/y_test.npy'))
+2026-07-06 19:07:16,687 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-06 19:07:16,687 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-06 19:07:17,242 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-06 19:07:17,242 | src.model.eval | INFO | Model evaluation started:
+2026-07-06 19:07:31,372 | src.model.eval | INFO | Model evaluation done
+2026-07-06 19:07:31,375 | utils.io | INFO | Saved JSON: artifacts\eval_result.json
+2026-07-06 19:07:31,377 | utils.io | INFO | Saved model: artifacts\classification_report.json
+2026-07-06 19:07:31,377 | __main__ | INFO | ========= Evaluation Complete ============
