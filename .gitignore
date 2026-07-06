@@ -7,3 +7,5 @@ catboost_info
 wandb
 
 artifacts/models/
+
+tests/
