@@ -5,7 +5,7 @@ from src.model.eval import eval
 
 
 class DummyPreprocessing:
-    target_columns = [
+    target = [
         "Dropout",
         "Enrolled",
         "Graduate",

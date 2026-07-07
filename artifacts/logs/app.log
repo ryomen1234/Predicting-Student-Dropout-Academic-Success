@@ -1839,3 +1839,306 @@ _catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature
 2026-07-07 20:02:47,273 | utils.io | INFO | Saved JSON: artifacts\eval_result.json
 2026-07-07 20:02:47,276 | utils.io | INFO | Saved model: artifacts\classification_report.joblib
 2026-07-07 20:02:47,276 | __main__ | INFO | ========= Evaluation Complete ============
+2026-07-07 20:03:46,383 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:03:47,289 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-07 20:03:47,289 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:03:47,289 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:03:48,751 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-07 20:03:48,751 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-07 20:03:48,759 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-07 20:03:48,759 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-07 20:03:52,803 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:03:52,804 | app.main | INFO | Rows: 1 Columns: 2
+2026-07-07 20:03:52,810 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:03:52,811 | app.main | INFO | Rows: 0 Columns: 0
+2026-07-07 20:03:52,812 | app.main | ERROR | Validation failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 49, in predict_file
+    df = validator.validate_csv_file(df)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_api.py", line 80, in fake_validate
+    raise ValueError("Missing required columns")
+ValueError: Missing required columns
+2026-07-07 20:03:52,821 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:03:52,821 | app.main | ERROR | Prediction failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 41, in predict_file
+    df = pd.read_csv(file.file, sep=";")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_api.py", line 106, in fake_read_csv
+    raise RuntimeError("Unexpected error")
+RuntimeError: Unexpected error
+2026-07-07 20:03:52,829 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:03:52,833 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:03:52,833 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:03:52,837 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:03:52,838 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:03:52,838 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:03:52,840 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:03:52,843 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:03:52,843 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:03:52,848 | src.data.split | INFO | data split start:
+2026-07-07 20:03:52,852 | src.data.split | INFO | Training and test data created
+2026-07-07 20:03:52,856 | src.data.split | INFO | data split start:
+2026-07-07 20:03:52,859 | src.data.split | INFO | Training and test data created
+2026-07-07 20:03:52,862 | src.data.split | INFO | data split start:
+2026-07-07 20:03:52,870 | src.data.split | INFO | Training and test data created
+2026-07-07 20:03:52,871 | src.data.split | INFO | data split start:
+2026-07-07 20:03:52,875 | src.data.split | INFO | Training and test data created
+2026-07-07 20:03:52,885 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:03:52,892 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:03:52,897 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:03:52,904 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:03:52,906 | src.data.data_validation | ERROR | target column ['Dropout', 'Graduate', 'Enrolled'] mismatch
+2026-07-07 20:03:52,915 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:03:52,963 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:03:52,990 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:03:53,009 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:03:53,014 | src.inference.loader | ERROR | Failed to load Model.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\inference\loader.py", line 16, in _load
+    artifact = load_model(path)
+               ^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_inference_loader.py", line 32, in fake_load_model
+    raise FileNotFoundError("Artifact not found")
+FileNotFoundError: Artifact not found
+2026-07-07 20:03:53,018 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:03:53,021 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:03:53,021 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:03:53,024 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:03:53,024 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:03:53,031 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:03:53,031 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:03:53,039 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:03:53,041 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-07 20:03:53,044 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:03:53,044 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-07 20:03:53,053 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:03:53,053 | src.inference.validate | ERROR | Missing columns: ['AdmissionGrade']
+2026-07-07 20:03:53,056 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:03:53,056 | src.inference.validate | ERROR | Unexpected columns: ['Height']
+2026-07-07 20:03:53,059 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:03:53,059 | src.inference.validate | ERROR | Input must be a pandas DataFrame.
+2026-07-07 20:03:53,063 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:03:53,099 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-07 20:03:53,101 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:03:53,102 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-07 20:03:53,105 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:03:53,108 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:03:53,108 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:03:53,108 | src.model.train | INFO | Training completed in 0.00 seconds
+2026-07-07 20:03:53,112 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:03:53,112 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:03:53,112 | src.model.train | INFO | Training completed in 0.00 seconds
+2026-07-07 20:03:53,116 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:03:53,116 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:03:53,116 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\tests\test_train.py", line 80, in fit
+    raise RuntimeError("Training failed")
+RuntimeError: Training failed
+2026-07-07 20:05:03,180 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:05:03,979 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-07 20:05:03,979 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:05:03,979 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:05:05,129 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-07 20:05:05,129 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-07 20:05:05,129 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-07 20:05:05,129 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-07 20:05:08,780 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:05:08,781 | app.main | INFO | Rows: 1 Columns: 2
+2026-07-07 20:05:08,789 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:05:08,789 | app.main | INFO | Rows: 0 Columns: 0
+2026-07-07 20:05:08,789 | app.main | ERROR | Validation failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 49, in predict_file
+    df = validator.validate_csv_file(df)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_api.py", line 80, in fake_validate
+    raise ValueError("Missing required columns")
+ValueError: Missing required columns
+2026-07-07 20:05:08,801 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:05:08,801 | app.main | ERROR | Prediction failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 41, in predict_file
+    df = pd.read_csv(file.file, sep=";")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_api.py", line 106, in fake_read_csv
+    raise RuntimeError("Unexpected error")
+RuntimeError: Unexpected error
+2026-07-07 20:05:08,809 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:05:08,809 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:05:08,809 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:05:08,817 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:05:08,818 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:05:08,818 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:05:08,819 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:05:08,819 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:05:08,819 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:05:08,828 | src.data.split | INFO | data split start:
+2026-07-07 20:05:08,829 | src.data.split | INFO | Training and test data created
+2026-07-07 20:05:08,836 | src.data.split | INFO | data split start:
+2026-07-07 20:05:08,838 | src.data.split | INFO | Training and test data created
+2026-07-07 20:05:08,844 | src.data.split | INFO | data split start:
+2026-07-07 20:05:08,847 | src.data.split | INFO | Training and test data created
+2026-07-07 20:05:08,847 | src.data.split | INFO | data split start:
+2026-07-07 20:05:08,851 | src.data.split | INFO | Training and test data created
+2026-07-07 20:05:08,854 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:05:08,863 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:05:08,869 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:05:08,874 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:05:08,875 | src.data.data_validation | ERROR | target column ['Dropout', 'Graduate', 'Enrolled'] mismatch
+2026-07-07 20:05:08,879 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:05:08,909 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:05:08,927 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:05:08,953 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:05:08,957 | src.inference.loader | ERROR | Failed to load Model.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\inference\loader.py", line 16, in _load
+    artifact = load_model(path)
+               ^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_inference_loader.py", line 32, in fake_load_model
+    raise FileNotFoundError("Artifact not found")
+FileNotFoundError: Artifact not found
+2026-07-07 20:05:08,959 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:05:08,965 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:05:08,965 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:05:08,969 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:05:08,971 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:05:08,972 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:05:08,972 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:05:08,979 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:08,979 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-07 20:05:08,986 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:08,989 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-07 20:05:08,992 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:08,993 | src.inference.validate | ERROR | Missing columns: ['AdmissionGrade']
+2026-07-07 20:05:08,995 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:08,997 | src.inference.validate | ERROR | Unexpected columns: ['Height']
+2026-07-07 20:05:09,000 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:09,000 | src.inference.validate | ERROR | Input must be a pandas DataFrame.
+2026-07-07 20:05:09,006 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:05:09,035 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-07 20:05:09,041 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:05:09,042 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-07 20:05:09,042 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:05:09,049 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:05:09,050 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:05:09,050 | src.model.train | INFO | Training completed in 0.00 seconds
+2026-07-07 20:05:09,053 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:05:09,053 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:05:09,055 | src.model.train | INFO | Training completed in 0.00 seconds
+2026-07-07 20:05:09,059 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:05:09,059 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:05:09,059 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\tests\test_train.py", line 80, in fit
+    raise RuntimeError("Training failed")
+RuntimeError: Training failed
+2026-07-07 20:05:21,936 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:05:22,698 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-07 20:05:22,698 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:05:22,699 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:05:24,040 | utils.io | INFO | Loaded model: artifacts\encoder.joblib
+2026-07-07 20:05:24,041 | src.inference.loader | INFO | Encoder loaded successfully.
+2026-07-07 20:05:24,041 | utils.io | INFO | Loaded model: artifacts\feature_names.joblib
+2026-07-07 20:05:24,041 | src.inference.loader | INFO | Feature names loaded successfully.
+2026-07-07 20:05:27,559 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:05:27,560 | app.main | INFO | Rows: 1 Columns: 2
+2026-07-07 20:05:27,566 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:05:27,567 | app.main | INFO | Rows: 0 Columns: 0
+2026-07-07 20:05:27,567 | app.main | ERROR | Validation failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 49, in predict_file
+    df = validator.validate_csv_file(df)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_api.py", line 80, in fake_validate
+    raise ValueError("Missing required columns")
+ValueError: Missing required columns
+2026-07-07 20:05:27,579 | app.main | INFO | Reading uploaded CSV: students.csv
+2026-07-07 20:05:27,579 | app.main | ERROR | Prediction failed.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\app\main.py", line 41, in predict_file
+    df = pd.read_csv(file.file, sep=";")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_api.py", line 106, in fake_read_csv
+    raise RuntimeError("Unexpected error")
+RuntimeError: Unexpected error
+2026-07-07 20:05:27,586 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:05:27,588 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:05:27,589 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:05:27,592 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:05:27,592 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:05:27,592 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:05:27,599 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:05:27,599 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:05:27,599 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:05:27,605 | src.data.split | INFO | data split start:
+2026-07-07 20:05:27,611 | src.data.split | INFO | Training and test data created
+2026-07-07 20:05:27,617 | src.data.split | INFO | data split start:
+2026-07-07 20:05:27,621 | src.data.split | INFO | Training and test data created
+2026-07-07 20:05:27,627 | src.data.split | INFO | data split start:
+2026-07-07 20:05:27,629 | src.data.split | INFO | Training and test data created
+2026-07-07 20:05:27,629 | src.data.split | INFO | data split start:
+2026-07-07 20:05:27,636 | src.data.split | INFO | Training and test data created
+2026-07-07 20:05:27,642 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:05:27,651 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:05:27,659 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:05:27,666 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:05:27,669 | src.data.data_validation | ERROR | target column ['Dropout', 'Graduate', 'Enrolled'] mismatch
+2026-07-07 20:05:27,675 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:05:27,696 | src.model.eval | INFO | Model evaluation done
+2026-07-07 20:05:27,699 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:05:27,710 | src.model.eval | INFO | Model evaluation done
+2026-07-07 20:05:27,714 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:05:27,728 | src.model.eval | INFO | Model evaluation done
+2026-07-07 20:05:27,733 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:05:27,735 | src.inference.loader | ERROR | Failed to load Model.
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\inference\loader.py", line 16, in _load
+    artifact = load_model(path)
+               ^^^^^^^^^^^^^^^^
+  File "E:\project_archive\new project\tests\test_inference_loader.py", line 32, in fake_load_model
+    raise FileNotFoundError("Artifact not found")
+FileNotFoundError: Artifact not found
+2026-07-07 20:05:27,739 | src.inference.loader | INFO | Model loaded successfully.
+2026-07-07 20:05:27,743 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:05:27,743 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:05:27,743 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:05:27,750 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:05:27,750 | src.inference.predict | INFO | Model loading....
+2026-07-07 20:05:27,750 | src.inference.predict | INFO | Loading feature names....
+2026-07-07 20:05:27,759 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:27,759 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-07 20:05:27,763 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:27,769 | src.inference.validate | INFO | Data validation completed successfully.
+2026-07-07 20:05:27,771 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:27,771 | src.inference.validate | ERROR | Missing columns: ['AdmissionGrade']
+2026-07-07 20:05:27,778 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:27,779 | src.inference.validate | ERROR | Unexpected columns: ['Height']
+2026-07-07 20:05:27,781 | src.inference.validate | INFO | Validating uploaded data.
+2026-07-07 20:05:27,781 | src.inference.validate | ERROR | Input must be a pandas DataFrame.
+2026-07-07 20:05:27,784 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:05:27,821 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-07 20:05:27,824 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:05:27,825 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-07 20:05:27,826 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:05:27,833 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:05:27,833 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:05:27,834 | src.model.train | INFO | Training completed in 0.00 seconds
+2026-07-07 20:05:27,839 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:05:27,839 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:05:27,840 | src.model.train | INFO | Training completed in 0.00 seconds
+2026-07-07 20:05:27,844 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 20:05:27,844 | src.model.train | INFO | Training data shape: 4 sample, 2 feature
+2026-07-07 20:05:27,845 | src.model.train | ERROR | Model training failed
+Traceback (most recent call last):
+  File "E:\project_archive\new project\src\model\train.py", line 21, in train_model
+    model.fit(X_train, y_train)
+  File "E:\project_archive\new project\tests\test_train.py", line 80, in fit
+    raise RuntimeError("Training failed")
+RuntimeError: Training failed
