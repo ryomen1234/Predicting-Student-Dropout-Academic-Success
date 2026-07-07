@@ -1805,3 +1805,37 @@ _catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature
 2026-07-07 19:57:11,713 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
 2026-07-07 19:57:12,202 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
 2026-07-07 19:57:12,203 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:00:21,106 | __main__ | INFO | ======== Running  DataPipeline ==========
+2026-07-07 20:00:21,112 | __main__ | INFO | config file loaded
+2026-07-07 20:00:21,143 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-07 20:00:21,143 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 20:00:21,154 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 20:00:21,157 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 20:00:21,157 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 20:00:21,158 | src.data.split | INFO | data split start:
+2026-07-07 20:00:21,163 | src.data.split | INFO | Training and test data created
+2026-07-07 20:00:21,163 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 20:00:21,200 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-07 20:00:21,202 | utils.io | INFO | Saved JSON: artifacts\reports\validation.json
+2026-07-07 20:00:21,204 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-07 20:00:21,230 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-07 20:00:21,245 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-07 20:00:21,246 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-07 20:00:21,247 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-07 20:00:21,247 | __main__ | INFO | ======= DataPipeline run successfully =========
+2026-07-07 20:00:29,180 | __main__ | INFO | =========== Evaluation Started =============
+2026-07-07 20:00:29,190 | __main__ | INFO | config file loaded
+2026-07-07 20:00:29,205 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-07 20:00:29,209 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-07 20:00:29,830 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-07 20:00:29,830 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:02:38,054 | __main__ | INFO | =========== Evaluation Started =============
+2026-07-07 20:02:38,057 | __main__ | INFO | config file loaded
+2026-07-07 20:02:38,061 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-07 20:02:38,061 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-07 20:02:38,566 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-07 20:02:38,566 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 20:02:47,270 | src.model.eval | INFO | Model evaluation done
+2026-07-07 20:02:47,273 | utils.io | INFO | Saved JSON: artifacts\eval_result.json
+2026-07-07 20:02:47,276 | utils.io | INFO | Saved model: artifacts\classification_report.joblib
+2026-07-07 20:02:47,276 | __main__ | INFO | ========= Evaluation Complete ============
