@@ -15,7 +15,8 @@ artifacts/models/
 # Generated reports
 artifacts/reports/
 
-artifacts/
+# Logs files
+artifacts/logs/
 
 # Python cache
 __pycache__/
