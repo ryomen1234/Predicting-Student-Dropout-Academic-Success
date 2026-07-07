@@ -1,11 +1,31 @@
-venv
+# Virtual environment
+venv/
 
-data/raw
-data/processed
+# Data (managed by DVC)
+data/raw/
+data/processed/
 
-catboost_info
-wandb
+# Experiment tracking
+wandb/
+catboost_info/
 
+# Model artifacts
 artifacts/models/
 
-tests/
+# Generated reports
+artifacts/reports/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

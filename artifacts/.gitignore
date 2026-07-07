@@ -1,1 +1,2 @@
-/models
+/eval_result.json
+/classification_report.joblib

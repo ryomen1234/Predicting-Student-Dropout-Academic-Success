@@ -1,6 +1,8 @@
-from src.pipelines import data_pipeline
-from src.pipelines import model_train_pipeline
-from src.pipelines import model_eval_pipeline
+from src.pipelines import (
+    data_pipeline,
+    training_pipeline,
+    evaluation_pipeline,
+)
 
 from utils.logger import get_logger
 
@@ -8,14 +10,22 @@ logger = get_logger(__name__)
 
 
 def run():
+    logger.info("=" * 60)
+    logger.info("MAIN PIPELINE STARTED")
+    logger.info("=" * 60)
 
-    logger.info("========== TRAINING PIPELINE STARTED ==========")
+    try:
+        data_pipeline.run()
+        training_pipeline.run()
+        evaluation_pipeline.run()
 
-    data_pipeline.run()
-    model_train_pipeline.run()
-    model_eval_pipeline.run()
+        logger.info("=" * 60)
+        logger.info("MAIN PIPELINE COMPLETED SUCCESSFULLY")
+        logger.info("=" * 60)
 
-    logger.info("========== TRAINING PIPELINE COMPLETED ==========")
+    except Exception:
+        logger.exception("Pipeline execution failed.")
+        raise
 
 
 if __name__ == "__main__":

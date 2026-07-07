@@ -1,0 +1,30 @@
+stages:
+  data:
+    cmd: python -m src.pipelines.data_pipeline
+    deps:
+      - data/raw/student_academic_data/data.csv
+      - src/data
+    outs:
+      - data/processed/X_train.csv
+      - data/processed/X_test.csv
+      - data/processed/y_train.npy
+      - data/processed/y_test.npy
+
+  train:
+    cmd: python -m src.pipelines.training_pipeline
+    deps:
+      - data/processed/X_train.csv
+      - data/processed/y_train.npy
+    outs:
+      - artifacts/models/best_model.joblib
+      - artifacts/feature_names.joblib
+
+  evaluate:
+    cmd: python -m src.pipelines.evaluation_pipeline
+    deps:
+      - artifacts/models/best_model.joblib
+      - data/processed/X_test.csv
+      - data/processed/y_test.npy
+    outs:
+      - artifacts/eval_result.json
+      - artifacts/classification_report.joblib

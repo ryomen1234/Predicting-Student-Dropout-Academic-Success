@@ -38,11 +38,11 @@ artifacts:
   model_path: artifacts/models/best_model.joblib
   encoder_path: artifacts/encoder.joblib
   feature_names_path: artifacts/feature_names.joblib
-  data_validation_path: artifacts/reports/data_validation_result.json
-  evaluation_path: artifacts/reports/evalution.json
-  classification_report_path: artifacts/reports/classification_report.joblib
+  data_validation_path: artifacts/reports/validation.json
+  eval_result_path: artifacts/eval_result.json
+  classification_report_path: artifacts/classification_report.joblib
 
-processed_path:
+processed_data:
   X_train_path: data/processed/X_train.csv
   X_test_path: data/processed/X_test.csv
   y_train_path: data/processed/y_train.npy

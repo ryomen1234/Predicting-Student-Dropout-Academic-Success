@@ -4,92 +4,64 @@ from src.data.data_validation import DataValidation
 from src.data.label_encoder import encode_label
 
 from utils.io import (
-    load_csv,
+    save_json,
     save_csv,
     save_numpy,
-    save_model,
-    save_json,
+    load_csv,
+    save_model
 )
+
 from utils.logger import get_logger
 from utils.load_config import load_config
 
+
 logger = get_logger(__name__)
 
-
 def run():
-    logger.info("========== DATA PIPELINE STARTED ==========")
-
+    logger.info("======== Running  DataPipeline ==========")
+   
+    # load config
     config = load_config()
-    logger.info("Config loaded")
-    logger.debug(f"config: {config}")
+    logger.info("config file loaded")
 
-    # Load raw data
-    data_path = (
-        config.data_paths.data_dir_path
-        / "raw"
-        / "student_academic_data"
-        / "data.csv"
-    )
+    # laod data
+    data_path = config.data_paths.data_dir_path / "raw" / "student_academic_data" / "data.csv"
+    df = load_csv(path=data_path)
 
-    df = load_csv(data_path)
-    logger.info("Data loaded.")
+    # validate dataset
+    dv = DataValidation(config=config)
+    validation_result = dv.validate(df)
 
-    # Validate
-    validator = DataValidation(config)
-    validation_result = validator.validate(df)
+    # clean data
+    df = data_cleaning.clean_data(data=df, config=config)
 
-    # Clean
-    df = data_cleaning.clean_data(
-        data=df,
-        config=config,
-    )
+    # split into train and test
+    X_train, X_test, y_train, y_test = split.split_data(config=config, df=df)
 
-    # Split
-    X_train, X_test, y_train, y_test = split.split_data(
-        config=config,
-        df=df,
-    )
+    # label encoder
+    y_train, y_test, encoder = encode_label(y_train=y_train, y_test=y_test)
 
-    # Encode labels
-    y_train, y_test, encoder = encode_label(
-        y_train=y_train,
-        y_test=y_test,
-    )
+    save_json(data=validation_result, path=config.artifacts.data_validation_path)
 
-    # Save processed data
-    save_csv(
-        X_train,
-        config.processed_path.X_train_path,
-    )
+    save_model(model=encoder, path=config.artifacts.encoder_path)
 
-    save_csv(
-        X_test,
-        config.processed_path.X_test_path,
-    )
+    save_csv(data=X_train, path=config.processed_data.X_train_path)
+    save_csv(data=X_test, path=config.processed_data.X_test_path)
 
-    save_numpy(
-        y_train,
-        config.processed_path.y_train_path,
-    )
+    save_numpy(data=y_train, path=config.processed_data.y_train_path)
+    save_numpy(data=y_test, path=config.processed_data.y_test_path)
 
-    save_numpy(
-        y_test,
-        config.processed_path.y_test_path,
-    )
-
-    # Save encoder
-    save_model(
-        encoder,
-        config.artifacts.encoder_path,
-    )
-
-    # Save validation report
-    save_json(
-        validation_result,
-        config.artifacts.data_validation_path,
-    )
-
-    logger.info("========== DATA PIPELINE COMPLETED ==========")
+    logger.info("======= DataPipeline run successfully =========")
 
 if __name__ == "__main__":
     run()
+
+
+
+
+
+
+
+
+
+
