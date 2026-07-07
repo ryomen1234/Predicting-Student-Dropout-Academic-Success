@@ -1749,3 +1749,59 @@ _catboost.CatBoostError: Bad value for num_feature[non_default_doc_idx=0,feature
 2026-07-06 19:42:40,870 | utils.io | INFO | Saved JSON: artifacts\eval_result.json
 2026-07-06 19:42:40,873 | utils.io | INFO | Saved model: artifacts\classification_report.joblib
 2026-07-06 19:42:40,874 | __main__ | INFO | ========= Evaluation Complete ============
+2026-07-07 19:44:31,970 | __main__ | INFO | ======== Running  DataPipeline ==========
+2026-07-07 19:44:31,973 | __main__ | INFO | config file loaded
+2026-07-07 19:44:32,016 | utils.io | INFO | Loaded CSV: data\raw\student_academic_data\data.csv
+2026-07-07 19:44:32,016 | src.data.data_validation | INFO | Data validation started.
+2026-07-07 19:44:32,033 | src.data.data_cleaning | INFO | Data cleaning started
+2026-07-07 19:44:32,039 | src.data.data_cleaning | INFO | columns droped from X_train and X_test
+2026-07-07 19:44:32,039 | src.data.data_cleaning | INFO | Data cleaning complete
+2026-07-07 19:44:32,040 | src.data.split | INFO | data split start:
+2026-07-07 19:44:32,047 | src.data.split | INFO | Training and test data created
+2026-07-07 19:44:32,047 | src.data.label_encoder | INFO | Encoding target labels
+2026-07-07 19:44:32,202 | src.data.label_encoder | INFO | Encoded 3 classes
+2026-07-07 19:44:32,203 | utils.io | INFO | Saved JSON: artifacts\reports\validation.json
+2026-07-07 19:44:32,204 | utils.io | INFO | Saved model: artifacts\encoder.joblib
+2026-07-07 19:44:32,234 | utils.io | INFO | Saved CSV: data\processed\X_train.csv
+2026-07-07 19:44:32,241 | utils.io | INFO | Saved CSV: data\processed\X_test.csv
+2026-07-07 19:44:32,242 | utils.io | INFO | Saved NumPy array: data\processed\y_train.npy
+2026-07-07 19:44:32,243 | utils.io | INFO | Saved NumPy array: data\processed\y_test.npy
+2026-07-07 19:44:32,244 | __main__ | INFO | ======= DataPipeline run successfully =========
+2026-07-07 19:44:45,262 | __main__ | INFO | ========== Training Pipeline Started ==========
+2026-07-07 19:44:45,264 | __main__ | INFO | config file loaded
+2026-07-07 19:44:45,286 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-07 19:44:45,298 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-07 19:44:45,298 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 19:44:45,298 | src.model.train | INFO | Training data shape: 3539 sample, 21 feature
+2026-07-07 19:44:47,779 | src.model.train | INFO | Training completed in 2.48 seconds
+2026-07-07 19:44:47,784 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-07 19:44:47,785 | utils.io | INFO | Saved model: artifacts\feature_names.joblib
+2026-07-07 19:44:47,785 | __main__ | INFO | Training Pipeline Complete.
+2026-07-07 19:48:30,473 | __main__ | INFO | ========== Training Pipeline Started ==========
+2026-07-07 19:48:30,479 | __main__ | INFO | config file loaded
+2026-07-07 19:48:30,498 | utils.io | INFO | Loaded CSV: data\processed\X_train.csv
+2026-07-07 19:48:30,504 | utils.io | INFO | Loaded NumPy array: data\processed\y_train.npy
+2026-07-07 19:48:30,504 | src.model.train | INFO | Starting CatBoost Training
+2026-07-07 19:48:30,504 | src.model.train | INFO | Training data shape: 3539 sample, 21 feature
+2026-07-07 19:48:32,692 | src.model.train | INFO | Training completed in 2.19 seconds
+2026-07-07 19:48:32,692 | utils.io | INFO | Saved model: artifacts\models\best_model.joblib
+2026-07-07 19:48:32,692 | utils.io | INFO | Saved model: artifacts\feature_names.joblib
+2026-07-07 19:48:32,692 | __main__ | INFO | Training Pipeline Complete.
+2026-07-07 19:48:38,732 | __main__ | INFO | =========== Evaluation Started =============
+2026-07-07 19:48:38,742 | __main__ | INFO | config file loaded
+2026-07-07 19:48:38,755 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-07 19:48:38,757 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-07 19:48:39,304 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-07 19:48:39,304 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 19:52:58,683 | __main__ | INFO | =========== Evaluation Started =============
+2026-07-07 19:52:58,686 | __main__ | INFO | config file loaded
+2026-07-07 19:52:58,691 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-07 19:52:58,692 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-07 19:52:59,180 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-07 19:52:59,180 | src.model.eval | INFO | Model evaluation started:
+2026-07-07 19:57:11,705 | __main__ | INFO | =========== Evaluation Started =============
+2026-07-07 19:57:11,710 | __main__ | INFO | config file loaded
+2026-07-07 19:57:11,713 | utils.io | INFO | Loaded CSV: data\processed\X_test.csv
+2026-07-07 19:57:11,713 | utils.io | INFO | Loaded NumPy array: data\processed\y_test.npy
+2026-07-07 19:57:12,202 | utils.io | INFO | Loaded model: artifacts\models\best_model.joblib
+2026-07-07 19:57:12,203 | src.model.eval | INFO | Model evaluation started:

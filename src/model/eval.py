@@ -23,7 +23,7 @@ def eval(model, X_test, y_test,config):
         report = classification_report(
             y_pred=pred,
             y_true=y_test,
-            target_names=config.preprocessing.target_columns
+            target_names=config.preprocessing.target_col
         )
 
         run.log({
